@@ -1,6 +1,6 @@
 # protocolVerify
 
-Read a protocol modeled in Murphi and translate it into chisel. Then we turn chisel into verilog/netlist(btor) , and finally perform model checking with air.
+Read a protocol modeled in Murphi and translate it into chisel. Then we turn chisel into verilog/netlist(btor) , and finally perform model checking with avr.
 
 ### Build from source 
 
