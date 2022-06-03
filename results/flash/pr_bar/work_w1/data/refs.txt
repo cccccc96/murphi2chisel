@@ -1,0 +1,18 @@
+(benchmark) w1
+
+
+(local equalities) #0
+
+(learned predicates) #0
+
+(learned constants)  #0
+
+(learned signals)    #0
+
+(learned UFs)        #0
+
+(#sim. iterations) 0
+(#ref. iterations) 0
+(#refs) 0
+(#assump. lemmas)  2
+(#lemmas)          2

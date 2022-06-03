@@ -1,0 +1,50 @@
+Property (P): (sz: 7)
+		!(b$124)	&&
+		!(b$128)	&&
+		!(b$132)	&&
+		!(b$136)	&&
+		!(b$140)	&&
+		!(b$144)	&&
+		!(b$148)
+
+Inductive Invariants (i.e. (Inv -> P) and (Inv ^ T ^ !Inv+) is UNSAT): #1
+(sz: 25)
+		!(((_s10_Cache_reg_4_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s21_Chan2_reg_0_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s23_Chan2_reg_1_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s25_Chan2_reg_2_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s27_Chan2_reg_3_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s29_Chan2_reg_4_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s2_Cache_reg_0_State != 2'd1) && (_s2_Cache_reg_0_State != 2'd0) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s2_Cache_reg_0_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s41_CurCmd_reg == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s4_Cache_reg_1_State != 2'd1) && (_s4_Cache_reg_1_State != 2'd0) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s4_Cache_reg_1_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s6_Cache_reg_2_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!(((_s8_Cache_reg_3_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s0_AuxData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s1_Cache_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s22_Chan2_reg_0_Data && (_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s24_Chan2_reg_1_Data && (_s23_Chan2_reg_1_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s32_Chan3_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s34_Chan3_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s36_Chan3_reg_2_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s38_Chan3_reg_3_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s3_Cache_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s40_Chan3_reg_4_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		!((_s49_MemData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150))))	&&
+		property
+	[1]: 
+Assumptions:
+	[1]: (sz: 2)
+		(_i2_reset || b$153)	&&
+		(_i2_reset$next || b$153$next)
+
+Axioms (refinements): #1
+	[1]: (sz: 3)
+		!((((_s2_Cache_reg_0_State == 2'd0) || (_s2_Cache_reg_0_State != 2'd0)) && (_s2_Cache_reg_0_State == 2'd0) && ((_i1_io_en_a == 7'd46) || (_i1_io_en_a != 7'd46)) && b$17259 && |(_s2_Cache_reg_0_State$next) && (_s2_Cache_reg_0_State$next == _s2_Cache_reg_0_State$next_rhs)))	&&
+		!(_s63_id150$next)	&&
+		((_i2_reset || b$153) && (_i2_reset$next || b$153$next))
+
+(max frame explored)    F[6]
+(frame converged)       F[6]

@@ -1,0 +1,585 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#102)
+	(1-bit)	68
+	(2-bit)	19
+	(3-bit)	15
+
+Inputs (#13)
+	(1-bit)	12
+	(9-bit)	1
+
+Constants (#423)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	8
+	(4-bit)	9
+	(5-bit)	17
+	(6-bit)	33
+	(7-bit)	65
+	(8-bit)	129
+	(9-bit)	156
+
+---------------
+State Variables
+---------------
+_s101_id232                     (1-bit)
+_s100_id227                     (1-bit)
+_s99_id223                      (1-bit)
+_s98_id219                      (1-bit)
+_s97_id215                      (1-bit)
+_s96_id211                      (1-bit)
+_s95_id207                      (1-bit)
+_s94_id203                      (1-bit)
+_s93_id199                      (1-bit)
+_s92_id195                      (1-bit)
+_s91_id190                      (1-bit)
+_s90_id188                      (1-bit)
+_s88_Sta_reg_WbMsg_HomeProc     (1-bit)
+_s87_Sta_reg_WbMsg_Data         (1-bit)
+_s86_Sta_reg_WbMsg_Cmd          (1-bit)
+_s84_Sta_reg_UniMsg_4_HomeProc    (1-bit)
+_s83_Sta_reg_UniMsg_4_Data      (1-bit)
+_s80_Sta_reg_UniMsg_3_HomeProc    (1-bit)
+_s79_Sta_reg_UniMsg_3_Data      (1-bit)
+_s76_Sta_reg_UniMsg_2_HomeProc    (1-bit)
+_s75_Sta_reg_UniMsg_2_Data      (1-bit)
+_s72_Sta_reg_UniMsg_1_HomeProc    (1-bit)
+_s71_Sta_reg_UniMsg_1_Data      (1-bit)
+_s68_Sta_reg_UniMsg_0_HomeProc    (1-bit)
+_s67_Sta_reg_UniMsg_0_Data      (1-bit)
+_s64_Sta_reg_ShWbMsg_HomeProc    (1-bit)
+_s63_Sta_reg_ShWbMsg_Data       (1-bit)
+_s61_Sta_reg_RpMsg_4_Cmd        (1-bit)
+_s60_Sta_reg_RpMsg_3_Cmd        (1-bit)
+_s59_Sta_reg_RpMsg_2_Cmd        (1-bit)
+_s58_Sta_reg_RpMsg_1_Cmd        (1-bit)
+_s57_Sta_reg_RpMsg_0_Cmd        (1-bit)
+_s55_Sta_reg_Proc_4_InvMarked    (1-bit)
+_s53_Sta_reg_Proc_4_CacheData    (1-bit)
+_s51_Sta_reg_Proc_3_InvMarked    (1-bit)
+_s49_Sta_reg_Proc_3_CacheData    (1-bit)
+_s47_Sta_reg_Proc_2_InvMarked    (1-bit)
+_s45_Sta_reg_Proc_2_CacheData    (1-bit)
+_s43_Sta_reg_Proc_1_InvMarked    (1-bit)
+_s41_Sta_reg_Proc_1_CacheData    (1-bit)
+_s39_Sta_reg_Proc_0_InvMarked    (1-bit)
+_s37_Sta_reg_Proc_0_CacheData    (1-bit)
+_s36_Sta_reg_NakcMsg_Cmd        (1-bit)
+_s35_Sta_reg_MemData            (1-bit)
+_s28_Sta_reg_HomeUniMsg_HomeProc    (1-bit)
+_s27_Sta_reg_HomeUniMsg_Data    (1-bit)
+_s25_Sta_reg_HomeRpMsg_Cmd      (1-bit)
+_s23_Sta_reg_HomeProc_InvMarked    (1-bit)
+_s21_Sta_reg_HomeProc_CacheData    (1-bit)
+_s19_Sta_reg_Dir_ShrVld         (1-bit)
+_s18_Sta_reg_Dir_ShrSet_4       (1-bit)
+_s17_Sta_reg_Dir_ShrSet_3       (1-bit)
+_s16_Sta_reg_Dir_ShrSet_2       (1-bit)
+_s15_Sta_reg_Dir_ShrSet_1       (1-bit)
+_s14_Sta_reg_Dir_ShrSet_0       (1-bit)
+_s13_Sta_reg_Dir_Pending        (1-bit)
+_s12_Sta_reg_Dir_Local          (1-bit)
+_s11_Sta_reg_Dir_InvSet_4       (1-bit)
+_s10_Sta_reg_Dir_InvSet_3       (1-bit)
+_s9_Sta_reg_Dir_InvSet_2        (1-bit)
+_s8_Sta_reg_Dir_InvSet_1        (1-bit)
+_s7_Sta_reg_Dir_InvSet_0        (1-bit)
+_s6_Sta_reg_Dir_HomeShrSet      (1-bit)
+_s5_Sta_reg_Dir_HomeInvSet      (1-bit)
+_s4_Sta_reg_Dir_HomeHeadPtr     (1-bit)
+_s3_Sta_reg_Dir_HeadVld         (1-bit)
+_s1_Sta_reg_Dir_Dirty           (1-bit)
+_s0_Sta_reg_CurrData            (1-bit)
+_s62_Sta_reg_ShWbMsg_Cmd        (2-bit)
+_s56_Sta_reg_Proc_4_ProcCmd     (2-bit)
+_s54_Sta_reg_Proc_4_CacheState    (2-bit)
+_s52_Sta_reg_Proc_3_ProcCmd     (2-bit)
+_s50_Sta_reg_Proc_3_CacheState    (2-bit)
+_s48_Sta_reg_Proc_2_ProcCmd     (2-bit)
+_s46_Sta_reg_Proc_2_CacheState    (2-bit)
+_s44_Sta_reg_Proc_1_ProcCmd     (2-bit)
+_s42_Sta_reg_Proc_1_CacheState    (2-bit)
+_s40_Sta_reg_Proc_0_ProcCmd     (2-bit)
+_s38_Sta_reg_Proc_0_CacheState    (2-bit)
+_s34_Sta_reg_InvMsg_4_Cmd       (2-bit)
+_s33_Sta_reg_InvMsg_3_Cmd       (2-bit)
+_s32_Sta_reg_InvMsg_2_Cmd       (2-bit)
+_s31_Sta_reg_InvMsg_1_Cmd       (2-bit)
+_s30_Sta_reg_InvMsg_0_Cmd       (2-bit)
+_s24_Sta_reg_HomeProc_ProcCmd    (2-bit)
+_s22_Sta_reg_HomeProc_CacheState    (2-bit)
+_s20_Sta_reg_HomeInvMsg_Cmd     (2-bit)
+_s89_Sta_reg_WbMsg_Proc         (3-bit)
+_s85_Sta_reg_UniMsg_4_Proc      (3-bit)
+_s82_Sta_reg_UniMsg_4_Cmd       (3-bit)
+_s81_Sta_reg_UniMsg_3_Proc      (3-bit)
+_s78_Sta_reg_UniMsg_3_Cmd       (3-bit)
+_s77_Sta_reg_UniMsg_2_Proc      (3-bit)
+_s74_Sta_reg_UniMsg_2_Cmd       (3-bit)
+_s73_Sta_reg_UniMsg_1_Proc      (3-bit)
+_s70_Sta_reg_UniMsg_1_Cmd       (3-bit)
+_s69_Sta_reg_UniMsg_0_Proc      (3-bit)
+_s66_Sta_reg_UniMsg_0_Cmd       (3-bit)
+_s65_Sta_reg_ShWbMsg_Proc       (3-bit)
+_s29_Sta_reg_HomeUniMsg_Proc    (3-bit)
+_s26_Sta_reg_HomeUniMsg_Cmd     (3-bit)
+_s2_Sta_reg_Dir_HeadPtr         (3-bit)
+
+------
+Inputs
+------
+_i12_id245723                   (1-bit)
+_i11_id245718                   (1-bit)
+_i10_id245713                   (1-bit)
+_i9_id245708                    (1-bit)
+_i8_id245703                    (1-bit)
+_i7_id245698                    (1-bit)
+_i6_id245693                    (1-bit)
+_i5_id245687                    (1-bit)
+_i4_id245681                    (1-bit)
+_i3_id245673                    (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (9-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd0
+2'd3
+2'd2
+3'd3
+3'd2
+3'd1
+3'd0
+3'd7
+3'd6
+3'd5
+3'd4
+4'd0
+4'd15
+4'd14
+4'd13
+4'd12
+4'd11
+4'd10
+4'd9
+4'd8
+5'd31
+5'd30
+5'd29
+5'd28
+5'd27
+5'd26
+5'd25
+5'd24
+5'd23
+5'd22
+5'd21
+5'd20
+5'd19
+5'd18
+5'd17
+5'd16
+5'd0
+6'd63
+6'd62
+6'd61
+6'd60
+6'd59
+6'd58
+6'd57
+6'd56
+6'd55
+6'd54
+6'd53
+6'd52
+6'd51
+6'd50
+6'd49
+6'd48
+6'd47
+6'd46
+6'd45
+6'd44
+6'd43
+6'd42
+6'd41
+6'd40
+6'd39
+6'd38
+6'd37
+6'd36
+6'd35
+6'd34
+6'd33
+6'd32
+6'd0
+7'd127
+7'd126
+7'd125
+7'd124
+7'd123
+7'd122
+7'd121
+7'd120
+7'd119
+7'd118
+7'd117
+7'd116
+7'd115
+7'd114
+7'd113
+7'd112
+7'd111
+7'd110
+7'd109
+7'd108
+7'd107
+7'd106
+7'd105
+7'd104
+7'd103
+7'd102
+7'd101
+7'd100
+7'd99
+7'd98
+7'd97
+7'd96
+7'd95
+7'd94
+7'd93
+7'd92
+7'd91
+7'd90
+7'd89
+7'd88
+7'd87
+7'd86
+7'd85
+7'd84
+7'd83
+7'd82
+7'd81
+7'd80
+7'd79
+7'd78
+7'd77
+7'd76
+7'd75
+7'd74
+7'd73
+7'd72
+7'd71
+7'd70
+7'd69
+7'd68
+7'd67
+7'd66
+7'd65
+7'd64
+7'd0
+8'd255
+8'd254
+8'd253
+8'd252
+8'd251
+8'd250
+8'd249
+8'd248
+8'd247
+8'd246
+8'd245
+8'd244
+8'd243
+8'd242
+8'd241
+8'd240
+8'd239
+8'd238
+8'd237
+8'd236
+8'd235
+8'd234
+8'd233
+8'd232
+8'd231
+8'd230
+8'd229
+8'd228
+8'd227
+8'd226
+8'd225
+8'd224
+8'd223
+8'd222
+8'd221
+8'd220
+8'd219
+8'd218
+8'd217
+8'd216
+8'd215
+8'd214
+8'd213
+8'd212
+8'd211
+8'd210
+8'd209
+8'd208
+8'd207
+8'd206
+8'd205
+8'd204
+8'd203
+8'd202
+8'd201
+8'd200
+8'd199
+8'd198
+8'd197
+8'd196
+8'd195
+8'd194
+8'd193
+8'd192
+8'd191
+8'd190
+8'd189
+8'd188
+8'd187
+8'd186
+8'd185
+8'd184
+8'd183
+8'd182
+8'd181
+8'd180
+8'd179
+8'd178
+8'd177
+8'd176
+8'd175
+8'd174
+8'd173
+8'd172
+8'd171
+8'd170
+8'd169
+8'd168
+8'd167
+8'd166
+8'd165
+8'd164
+8'd163
+8'd162
+8'd161
+8'd160
+8'd159
+8'd158
+8'd157
+8'd156
+8'd155
+8'd154
+8'd153
+8'd152
+8'd151
+8'd150
+8'd149
+8'd148
+8'd147
+8'd146
+8'd145
+8'd144
+8'd143
+8'd142
+8'd141
+8'd140
+8'd139
+8'd138
+8'd137
+8'd136
+8'd135
+8'd134
+8'd133
+8'd132
+8'd131
+8'd130
+8'd129
+8'd128
+8'd0
+9'd411
+9'd410
+9'd409
+9'd408
+9'd407
+9'd406
+9'd405
+9'd404
+9'd403
+9'd402
+9'd401
+9'd400
+9'd399
+9'd398
+9'd397
+9'd396
+9'd395
+9'd394
+9'd393
+9'd392
+9'd391
+9'd390
+9'd389
+9'd388
+9'd387
+9'd386
+9'd385
+9'd384
+9'd383
+9'd382
+9'd381
+9'd380
+9'd379
+9'd378
+9'd377
+9'd376
+9'd375
+9'd374
+9'd373
+9'd372
+9'd371
+9'd370
+9'd369
+9'd368
+9'd367
+9'd366
+9'd365
+9'd364
+9'd363
+9'd362
+9'd361
+9'd360
+9'd359
+9'd358
+9'd357
+9'd356
+9'd355
+9'd354
+9'd353
+9'd352
+9'd351
+9'd350
+9'd349
+9'd348
+9'd347
+9'd346
+9'd345
+9'd344
+9'd343
+9'd342
+9'd341
+9'd340
+9'd339
+9'd338
+9'd337
+9'd336
+9'd335
+9'd334
+9'd333
+9'd332
+9'd331
+9'd330
+9'd329
+9'd328
+9'd327
+9'd326
+9'd325
+9'd324
+9'd323
+9'd322
+9'd321
+9'd320
+9'd319
+9'd318
+9'd317
+9'd316
+9'd315
+9'd314
+9'd313
+9'd312
+9'd311
+9'd310
+9'd309
+9'd308
+9'd307
+9'd306
+9'd305
+9'd304
+9'd303
+9'd302
+9'd301
+9'd300
+9'd299
+9'd298
+9'd297
+9'd296
+9'd295
+9'd294
+9'd293
+9'd292
+9'd291
+9'd290
+9'd289
+9'd288
+9'd287
+9'd286
+9'd285
+9'd284
+9'd283
+9'd282
+9'd281
+9'd280
+9'd279
+9'd278
+9'd277
+9'd276
+9'd275
+9'd274
+9'd273
+9'd272
+9'd271
+9'd270
+9'd269
+9'd268
+9'd267
+9'd266
+9'd265
+9'd264
+9'd263
+9'd262
+9'd261
+9'd260
+9'd259
+9'd258
+9'd257
+9'd256
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#12
+ReductionOr_1_3	#7
+ReductionOr_1_9	#1
+

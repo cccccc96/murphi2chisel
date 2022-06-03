@@ -1,0 +1,8 @@
+examples/btor2/flash.btor  examples/btor2/
+Using Btor2Parser
+	(reading btor2 file flash/pr_bar/work_w3/w3.btor2)
+	(finished parsing btor2 file flash/pr_bar/work_w3/w3.btor2)
+	(starting interpreting btor2 model)
+	(finished interpreting btor2 model)
+	(parsed system with ? state variables)
+	(performing splitting nodes at extract points)

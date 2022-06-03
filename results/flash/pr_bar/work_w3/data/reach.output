@@ -1,0 +1,106 @@
+Timeout: 3562, Memory_limit: 14261
+	10000.000000 (abstract query)
+	10000.000000 (concrete query)
+
+Config:
+	(concrete bit-width limit: 0)
+	(fineness: 2)
+	(interpret-ex-cc-level: 2)
+	(forward-check:	0)
+	(full projection)
+	(prioritization:	single)
+
+#STAT# num_bits= 44 num_regs= 13 num_total_bits= 73
+1  44
+2  10
+3  3
+
+System
+  int : 4133
+  bool : 12137
+  sum : 16270
+  bool_op : 8013
+  int_op : 14
+    !  30
+    !=_int  4
+    &&  97
+    ==  44
+    ==_int  171
+    ?:  5516
+    ?:_int  1967
+    {}  7
+    |_2  6
+    |_7  1
+    ||  184
+
+
+Property
+  int : 0
+  bool : 10
+  sum : 10
+  bool_op : 4
+  int_op : 0
+    !  2
+    &&  1
+    ==  1
+
+Partial interpretation info:
+  depth: 0
+  count: 0
+  count (d=0): 0
+
+  depth (prop): 0
+  count (prop): 0
+  count (d=0) (prop): 0
+
+	# of Inst.                  : 16353	(864 bytes each)
+	  ExInst::hm_ExInst.size()  : 0	(984 bytes each)
+	  SigInst::hm_SigInst.size(): 122	(904 bytes each)
+	  NumInst::hm_NumInst.size(): 137	(888 bytes each)
+	  OpInst::hm_OpInst.size()  : 482	(944 bytes each)
+	  OpInst::hm_ITEInst.size() : 7483	(944 bytes each)
+	  OpInst::hm_ETCInst.size() : 79	(944 bytes each)
+	Total                       : 8303
+
+	Memory (est.)               : 13.474457 MB
+	  ExInst                    : 0.000000 MB
+	  SigInst                   : 0.105179 MB
+	  NumInst                   : 0.116020 MB
+	  OpInst::OP                : 0.433929 MB
+	  OpInst::ITE               : 6.736710 MB
+	  OpInst::ETC               : 0.071121 MB
+
+	(maximum function composition in T: 1)
+[BMC_1]    (starting bmc upto max bound 1000)
+[BMC_1]    (step 0 is UNSAT)
+  0s	(bmc: safe till step 0)
+[BMC_1]    (step 1 is UNSAT)
+[BMC_1]    (step 2 is UNSAT)
+[BMC_1]    (step 3 is UNSAT)
+[BMC_1]    (step 4 is UNSAT)
+[BMC_1]    (step 5 is UNSAT)
+  0s	(bmc: safe till step 5)
+[BMC_1]    (step 6 is UNSAT)
+[BMC_1]    (step 7 is UNSAT)
+[BMC_1]    (step 8 is UNSAT)
+
+	(fallback to non-inc solver, bv, depth: 2, t:1524346 usec)
+[MUS_0]    	(non-inc result: --keep-ite unsat, t: 6467131 usec)
+[BMC_1]    (step 9 is UNSAT)
+
+	(fallback to non-inc solver, bv, depth: 2, t:2041530 usec)
+[MUS_0]    	(non-inc result: --keep-ite unsat, t: 17834343 usec)
+[BMC_1]    (step 10 is UNSAT)
+  30s	(bmc: safe till step 10)
+
+	(fallback to non-inc solver, bv, depth: 2, t:2457237 usec)
+[MUS_0]    	(non-inc result: --keep-ite unsat, t: 30425320 usec)
+[BMC_1]    (step 11 is UNSAT)
+
+	(fallback to non-inc solver, bv, depth: 2, t:2621907 usec)
+Y2 oneshot Query TIMEOUT (50000000), query type: 7, getModel: 1, tryVarElim: 0, keepIte: 1, enReset: 1
+	(resetting Y2 scope)
+Y2 oneshot Query TIMEOUT (50000000), query type: 7, getModel: 0, tryVarElim: 0, keepIte: 1, enReset: 0
+[MUS_0]    	(non-inc result: --var-elim --keep-ite ??, t: 33944116 usec)
+[MUS_0]    	(result (model required): ??, time: 34883090 usec (665324 + 34217766)
+	(resetting Y2 scope)

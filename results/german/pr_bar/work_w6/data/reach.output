@@ -1,0 +1,2897 @@
+Timeout: 3559, Memory_limit: 14016
+	10000.000000 (abstract query)
+	10000.000000 (concrete query)
+
+Config:
+	(concrete bit-width limit: 16)
+	(fineness: 2)
+	(interpret-ex-cc-level: 2)
+	(forward-check:	0)
+	(full projection)
+	(prioritization:	single)
+
+#STAT# num_bits= 42 num_regs= 22 num_total_bits= 103
+1  42
+2  5
+3  17
+
+System
+  int : 1843
+  bool : 3052
+  sum : 4895
+  bool_op : 2352
+  int_op : 23
+    !  40
+    !=_int  4
+    &&  51
+    ==  45
+    ==_int  132
+    ?:  1190
+    ?:_int  862
+    |_2  5
+    |_3  17
+    |_7  1
+    ||  28
+
+
+Property
+  int : 0
+  bool : 54
+  sum : 54
+  bool_op : 23
+  int_op : 0
+    !  14
+    &&  8
+    ==  1
+
+Partial interpretation info:
+  depth: 0
+  count: 0
+  count (d=0): 0
+
+  depth (prop): 0
+  count (prop): 0
+  count (d=0) (prop): 0
+
+	# of Inst.                  : 5029	(864 bytes each)
+	  ExInst::hm_ExInst.size()  : 0	(984 bytes each)
+	  SigInst::hm_SigInst.size(): 148	(904 bytes each)
+	  NumInst::hm_NumInst.size(): 76	(888 bytes each)
+	  OpInst::hm_OpInst.size()  : 343	(944 bytes each)
+	  OpInst::hm_ITEInst.size() : 2052	(944 bytes each)
+	  OpInst::hm_ETCInst.size() : 16	(944 bytes each)
+	Total                       : 2635
+
+	Memory (est.)               : 4.143768 MB
+	  ExInst                    : 0.000000 MB
+	  SigInst                   : 0.127594 MB
+	  NumInst                   : 0.064362 MB
+	  OpInst::OP                : 0.308792 MB
+	  OpInst::ITE               : 1.847351 MB
+	  OpInst::ETC               : 0.014404 MB
+
+	(maximum function composition in T: 1)
+
+---------------------------------------------------------------------------------------------
+ Reachability Analysis Begins
+---------------------------------------------------------------------------------------------
+Loop_FrameNumber_#ReachabilityIterations_#RefinementIterations
+---------------------------------------------------------------------------------------------
+Loop_0_0_0
+---------------------------------------------------------------------------------------------
+[Basis Step]:
+	F[0] = I
+	SAT_a ? [ F[0] && !P ]: UNSAT
+
+[First Step]:
+	SAT_a ? [ F[0] & T & !P ]: UNSAT
+
+[RES_1]       0	: 0	: 0 s: 0
+[RES_0]    L  0 : 0 s: 0, mem: 19, time: 0.027808
+[RES_1]       0	: 1	: 0 0 s: 0
+[RES_0]    L  1 : 0 0 s: 0, mem: 19, time: 0.028086
+---------------------------------------------------------------------------------------------
+Loop_1_0_0
+---------------------------------------------------------------------------------------------
+	F[1] = P
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(10 + 4 -> 10 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd2)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 1 s: 1
+[RES_0]    L  1 : 0 2 s: 2, mem: 20, time: 0.030985
+---------------------------------------------------------------------------------------------
+Loop_1_1_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(10 + 4 -> 10 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd2)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 2 s: 2
+[RES_0]    L  1 : 0 4 s: 4, mem: 20, time: 0.032922
+---------------------------------------------------------------------------------------------
+Loop_1_2_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(13 + 4 -> 13 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s0_AuxData_reg
+		[1] w1	(_s0_AuxData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 3 s: 3
+[RES_0]    L  1 : 0 6 s: 6, mem: 20, time: 0.035998
+---------------------------------------------------------------------------------------------
+Loop_1_3_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(13 + 4 -> 13 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s49_MemData_reg
+		[1] w1	(_s49_MemData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 4 s: 4
+[RES_0]    L  1 : 0 8 s: 8, mem: 20, time: 0.037832
+---------------------------------------------------------------------------------------------
+Loop_1_4_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(14 + 4 -> 14 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s1_Cache_reg_0_Data
+		[1] w1	(_s1_Cache_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 5 s: 5
+[RES_0]    L  1 : 0 10 s: 10, mem: 20, time: 0.040342
+---------------------------------------------------------------------------------------------
+Loop_1_5_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(14 + 4 -> 14 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd1)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 6 s: 6
+[RES_0]    L  1 : 0 12 s: 12, mem: 20, time: 0.043001
+---------------------------------------------------------------------------------------------
+Loop_1_6_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(14 + 4 -> 14 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd1)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 7 s: 7
+[RES_0]    L  1 : 0 14 s: 14, mem: 20, time: 0.045495
+---------------------------------------------------------------------------------------------
+Loop_1_7_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(15 + 4 -> 15 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s3_Cache_reg_1_Data
+		[1] w1	(_s3_Cache_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 1	: 0 8 s: 8
+[RES_0]    L  1 : 0 16 s: 16, mem: 20, time: 0.047995
+---------------------------------------------------------------------------------------------
+Loop_1_8_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[1] & T & !P+ ]: UNSAT
+[RES_1]       0	: 1	: 0 8 s: 8
+[RES_0]    L  1 : 0 16 s: 16, mem: 20, time: 0.048074
+	[Forward propagation]:
+[RES_1]       0	: 2	: 0 8 0 s: 8
+[RES_0]    L  2 : 0 16 0 s: 16, mem: 20, time: 0.052231
+---------------------------------------------------------------------------------------------
+Loop_2_0_0
+---------------------------------------------------------------------------------------------
+	F[2] = P
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 2)
+	(16 + 4 -> 16 + 2)
+	(4 -> 2 -> 2)
+		(added cond. from num.)	(_s2_Cache_reg_0_State$next == _s4_Cache_reg_1_State$next)
+	(4 -> 2 -> 3 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s2_Cache_reg_0_State == 2'd2) && (_s2_Cache_reg_0_State == _s4_Cache_reg_1_State))
+		[1] w2	((_s2_Cache_reg_0_State == 2'd2) && (_s2_Cache_reg_0_State == _s4_Cache_reg_1_State) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 8 1 s: 9
+[RES_0]    L  2 : 0 16 3 s: 19, mem: 20, time: 0.056383
+---------------------------------------------------------------------------------------------
+Loop_2_1_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #2
+	(adding required pred. from inp_c to ab. cube) #16
+	(adding from pre_c to cc. cube) #2
+	(adding pred. from inp_c to cc. cube) #16
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(16 + 4 -> 16 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s21_Chan2_reg_0_Cmd == 3'd6)
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(18 + 4 -> 18 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd2)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 8 1 s: 9
+[RES_0]    L  2 : 0 16 2 s: 18, mem: 21, time: 0.063236
+---------------------------------------------------------------------------------------------
+Loop_2_2_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #15
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #15
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(18 + 5 -> 18 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s23_Chan2_reg_1_Cmd == 3'd6)
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #20
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #20
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(18 + 5 -> 18 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s23_Chan2_reg_1_Cmd == 3'd5)
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(23 + 4 -> 23 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s3_Cache_reg_1_Data
+		[1] w1	(_s3_Cache_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 9 2 s: 11
+[RES_0]    L  2 : 0 18 4 s: 22, mem: 21, time: 0.07922
+---------------------------------------------------------------------------------------------
+Loop_2_3_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #59
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #59
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(19 + 5 -> 19 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s8_Cache_reg_3_State == 2'd2)
+		[1] w2	((_s8_Cache_reg_3_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #57
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #57
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(20 + 5 -> 20 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s10_Cache_reg_4_State == 2'd2)
+		[1] w2	((_s10_Cache_reg_4_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #61
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #61
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(21 + 5 -> 21 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s6_Cache_reg_2_State == 2'd2)
+		[1] w2	((_s6_Cache_reg_2_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(27 + 4 -> 27 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s0_AuxData_reg
+		[1] w1	(_s0_AuxData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 11 3 s: 14
+[RES_0]    L  2 : 0 22 6 s: 28, mem: 21, time: 0.107747
+---------------------------------------------------------------------------------------------
+Loop_2_4_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #21
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #21
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(22 + 5 -> 22 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s21_Chan2_reg_0_Cmd == 3'd5)
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(30 + 4 -> 30 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s1_Cache_reg_0_Data
+		[1] w1	(_s1_Cache_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 11 4 s: 15
+[RES_0]    L  2 : 0 22 8 s: 30, mem: 21, time: 0.117881
+---------------------------------------------------------------------------------------------
+Loop_2_5_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #6
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #6
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(25 + 8 -> 25 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s31_Chan3_reg_0_Cmd == 3'd4)
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #2
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #2
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(27 + 8 -> 27 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s41_CurCmd_reg == 3'd4)
+		[1] w3	((_s41_CurCmd_reg == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #2
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #2
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(27 + 8 -> 27 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s39_Chan3_reg_4_Cmd == 3'd4)
+		[1] w3	((_s39_Chan3_reg_4_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #4
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #4
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(29 + 8 -> 29 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s35_Chan3_reg_2_Cmd == 3'd4)
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #3
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #3
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(31 + 8 -> 31 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s37_Chan3_reg_3_Cmd == 3'd4)
+		[1] w3	((_s37_Chan3_reg_3_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #5
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #5
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(33 + 8 -> 33 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s33_Chan3_reg_1_Cmd == 3'd4)
+		[1] w3	((_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(39 + 4 -> 39 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s49_MemData_reg
+		[1] w1	(_s49_MemData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 16 5 s: 21
+[RES_0]    L  2 : 0 32 10 s: 42, mem: 22, time: 0.174144
+---------------------------------------------------------------------------------------------
+Loop_2_6_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(40 + 4 -> 40 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd1)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 15 6 s: 21
+[RES_0]    L  2 : 0 30 12 s: 42, mem: 22, time: 0.176866
+---------------------------------------------------------------------------------------------
+Loop_2_7_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(41 + 4 -> 41 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd2)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 14 7 s: 21
+[RES_0]    L  2 : 0 28 14 s: 42, mem: 22, time: 0.179513
+---------------------------------------------------------------------------------------------
+Loop_2_8_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(42 + 4 -> 42 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd1)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 2	: 0 13 8 s: 21
+[RES_0]    L  2 : 0 26 16 s: 42, mem: 22, time: 0.182184
+---------------------------------------------------------------------------------------------
+Loop_2_9_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[2] & T & !P+ ]: UNSAT
+[RES_1]       0	: 2	: 0 13 8 s: 21
+[RES_0]    L  2 : 0 26 16 s: 42, mem: 22, time: 0.182279
+	[Forward propagation]:
+[RES_1]       0	: 3	: 0 10 6 5 s: 21
+[RES_0]    L  3 : 0 20 12 10 s: 42, mem: 22, time: 0.203903
+---------------------------------------------------------------------------------------------
+Loop_3_0_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #61
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #61
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #14
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #14
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(34 + 5 -> 34 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s25_Chan2_reg_2_Cmd == 3'd6)
+		[1] w3	((_s25_Chan2_reg_2_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(53 + 5 -> 53 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s6_Cache_reg_2_State == 2'd2)
+		[1] w2	((_s6_Cache_reg_2_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #59
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #59
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #13
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #13
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(35 + 5 -> 35 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s27_Chan2_reg_3_Cmd == 3'd6)
+		[1] w3	((_s27_Chan2_reg_3_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(56 + 5 -> 56 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s8_Cache_reg_3_State == 2'd2)
+		[1] w2	((_s8_Cache_reg_3_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #57
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #57
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #12
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #12
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(36 + 5 -> 36 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s29_Chan2_reg_4_Cmd == 3'd6)
+		[1] w3	((_s29_Chan2_reg_4_Cmd == 3'd6) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 5 -> 1)
+	(59 + 5 -> 59 + 1)
+	(5 -> 1 -> 1)
+	(5 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s10_Cache_reg_4_State == 2'd2)
+		[1] w2	((_s10_Cache_reg_4_State == 2'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(29 + 4 -> 29 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s0_AuxData_reg
+		[1] w1	(_s0_AuxData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 10 8 6 s: 24
+[RES_0]    L  3 : 0 20 16 12 s: 48, mem: 22, time: 0.268271
+---------------------------------------------------------------------------------------------
+Loop_3_1_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #3
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #3
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #8
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #8
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(36 + 13 -> 36 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s37_Chan3_reg_3_Cmd != _s41_CurCmd_reg)
+		[1] w3	((_s37_Chan3_reg_3_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(65 + 8 -> 65 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (ReductionOr_1_3(_s41_CurCmd_reg) && (_s37_Chan3_reg_3_Cmd == 3'd4))
+		[1] w3	(ReductionOr_1_3(_s41_CurCmd_reg) && (_s37_Chan3_reg_3_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #5
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #5
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(36 + 13 -> 36 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg)
+		[1] w3	((_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(69 + 8 -> 69 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (ReductionOr_1_3(_s41_CurCmd_reg) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	(ReductionOr_1_3(_s41_CurCmd_reg) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #4
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #4
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(36 + 13 -> 36 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s35_Chan3_reg_2_Cmd != _s41_CurCmd_reg)
+		[1] w3	((_s35_Chan3_reg_2_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(73 + 8 -> 73 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s35_Chan3_reg_2_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #2
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #2
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #7
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #7
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(36 + 13 -> 36 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s39_Chan3_reg_4_Cmd != _s41_CurCmd_reg)
+		[1] w3	((_s39_Chan3_reg_4_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(77 + 8 -> 77 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s39_Chan3_reg_4_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s39_Chan3_reg_4_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #6
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #6
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #11
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #11
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(36 + 13 -> 36 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s31_Chan3_reg_0_Cmd != _s41_CurCmd_reg)
+		[1] w3	((_s31_Chan3_reg_0_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(81 + 8 -> 81 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s31_Chan3_reg_0_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(35 + 4 -> 35 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s49_MemData_reg
+		[1] w1	(_s49_MemData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 15 12 7 s: 34
+[RES_0]    L  3 : 0 30 29 14 s: 73, mem: 23, time: 0.388383
+---------------------------------------------------------------------------------------------
+Loop_3_2_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #21
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #21
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 5 -> 2)
+	(85 + 5 -> 85 + 2)
+	(5 -> 2 -> 2)
+	(5 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s22_Chan2_reg_0_Data && (_s21_Chan2_reg_0_Cmd == 3'd5))
+		[1] w3	(_s22_Chan2_reg_0_Data && (_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(39 + 4 -> 39 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s1_Cache_reg_0_Data
+		[1] w1	(_s1_Cache_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 15 12 8 s: 35
+[RES_0]    L  3 : 0 30 30 16 s: 76, mem: 23, time: 0.403712
+---------------------------------------------------------------------------------------------
+Loop_3_3_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #2
+	(adding required pred. from inp_c to ab. cube) #20
+	(adding from pre_c to cc. cube) #2
+	(adding pred. from inp_c to cc. cube) #20
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #7
+	(adding required pred. from inp_c to ab. cube) #30
+	(adding from pre_c to cc. cube) #7
+	(adding pred. from inp_c to cc. cube) #30
+	(abstract cube) 9	(9 + 0 + 0 + 0 + 0)
+	(concrete cube) 9	(9 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 9 -> 1)
+	(37 + 9 -> 37 + 1)
+	(9 -> 1 -> 1)
+	(9 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s41_CurCmd_reg == 3'd1)
+		[1] w3	((_s41_CurCmd_reg == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(89 + 4 -> 89 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s23_Chan2_reg_1_Cmd == 3'd5)
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(42 + 4 -> 42 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd1)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 15 12 9 s: 36
+[RES_0]    L  3 : 0 30 30 18 s: 78, mem: 23, time: 0.442737
+---------------------------------------------------------------------------------------------
+Loop_3_4_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #2
+	(adding required pred. from inp_c to ab. cube) #21
+	(adding from pre_c to cc. cube) #2
+	(adding pred. from inp_c to cc. cube) #21
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(91 + 4 -> 91 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s21_Chan2_reg_0_Cmd == 3'd5)
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(44 + 4 -> 44 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd1)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 14 11 10 s: 35
+[RES_0]    L  3 : 0 28 27 20 s: 75, mem: 23, time: 0.458243
+---------------------------------------------------------------------------------------------
+Loop_3_5_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(46 + 4 -> 46 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s3_Cache_reg_1_Data
+		[1] w1	(_s3_Cache_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 3	: 0 14 10 11 s: 35
+[RES_0]    L  3 : 0 28 25 22 s: 75, mem: 23, time: 0.461641
+---------------------------------------------------------------------------------------------
+Loop_3_6_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[3] & T & !P+ ]: UNSAT
+[RES_1]       0	: 3	: 0 14 10 11 s: 35
+[RES_0]    L  3 : 0 28 25 22 s: 75, mem: 23, time: 0.461711
+	[Forward propagation]:
+[RES_1]       0	: 4	: 0 11 7 5 12 s: 35
+[RES_0]    L  4 : 0 22 19 10 24 s: 75, mem: 23, time: 0.551801
+---------------------------------------------------------------------------------------------
+Loop_4_0_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #6
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #6
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #42
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #42
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #11
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #11
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(38 + 13 -> 38 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s21_Chan2_reg_0_Cmd == 3'd3)
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(117 + 10 -> 117 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s31_Chan3_reg_0_Cmd == 3'd4)
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #11
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #11
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(118 + 13 -> 118 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s21_Chan2_reg_0_Cmd == 3'd3) && (_s31_Chan3_reg_0_Cmd != _s41_CurCmd_reg))
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd3) && (_s31_Chan3_reg_0_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(73 + 8 -> 73 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s31_Chan3_reg_0_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #5
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #5
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #39
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #39
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(39 + 13 -> 39 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s23_Chan2_reg_1_Cmd == 3'd3)
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(122 + 10 -> 122 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s33_Chan3_reg_1_Cmd == 3'd4)
+		[1] w3	((_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(123 + 13 -> 123 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s23_Chan2_reg_1_Cmd == 3'd3) && (_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg))
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd3) && (_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(78 + 8 -> 78 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s33_Chan3_reg_1_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s33_Chan3_reg_1_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #4
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #4
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #42
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #42
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(39 + 13 -> 39 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s25_Chan2_reg_2_Cmd == 3'd3)
+		[1] w3	((_s25_Chan2_reg_2_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(126 + 10 -> 126 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s35_Chan3_reg_2_Cmd == 3'd4)
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(128 + 13 -> 128 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s35_Chan3_reg_2_Cmd != _s41_CurCmd_reg))
+		[1] w3	((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s35_Chan3_reg_2_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(83 + 8 -> 83 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s35_Chan3_reg_2_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #3
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #3
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #41
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #41
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #8
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #8
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(40 + 13 -> 40 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s27_Chan2_reg_3_Cmd == 3'd3)
+		[1] w3	((_s27_Chan2_reg_3_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(132 + 10 -> 132 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s37_Chan3_reg_3_Cmd == 3'd4)
+		[1] w3	((_s37_Chan3_reg_3_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #8
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #8
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(134 + 13 -> 134 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s27_Chan2_reg_3_Cmd == 3'd3) && (_s37_Chan3_reg_3_Cmd != _s41_CurCmd_reg))
+		[1] w3	((_s27_Chan2_reg_3_Cmd == 3'd3) && (_s37_Chan3_reg_3_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(88 + 8 -> 88 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s37_Chan3_reg_3_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s37_Chan3_reg_3_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #2
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #2
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #40
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #40
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #7
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #7
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 13 -> 1)
+	(41 + 13 -> 41 + 1)
+	(13 -> 1 -> 1)
+	(13 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s29_Chan2_reg_4_Cmd == 3'd3)
+		[1] w3	((_s29_Chan2_reg_4_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(138 + 10 -> 138 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s39_Chan3_reg_4_Cmd == 3'd4)
+		[1] w3	((_s39_Chan3_reg_4_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #7
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #7
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(140 + 13 -> 140 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s29_Chan2_reg_4_Cmd == 3'd3) && (_s39_Chan3_reg_4_Cmd != _s41_CurCmd_reg))
+		[1] w3	((_s29_Chan2_reg_4_Cmd == 3'd3) && (_s39_Chan3_reg_4_Cmd != _s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(93 + 8 -> 93 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s39_Chan3_reg_4_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg))
+		[1] w3	((_s39_Chan3_reg_4_Cmd == 3'd4) && ReductionOr_1_3(_s41_CurCmd_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(43 + 4 -> 43 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s49_MemData_reg
+		[1] w1	(_s49_MemData_reg && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 4	: 0 11 12 9 13 s: 45
+[RES_0]    L  4 : 0 22 29 23 26 s: 100, mem: 25, time: 0.966962
+---------------------------------------------------------------------------------------------
+Loop_4_1_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #21
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #21
+	(abstract cube) 5	(5 + 0 + 0 + 0 + 0)
+	(concrete cube) 5	(5 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 5 -> 2)
+	(97 + 5 -> 97 + 2)
+	(5 -> 2 -> 2)
+	(5 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s22_Chan2_reg_0_Data && (_s21_Chan2_reg_0_Cmd == 3'd5))
+		[1] w3	(_s22_Chan2_reg_0_Data && (_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(47 + 4 -> 47 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s1_Cache_reg_0_Data
+		[1] w1	(_s1_Cache_reg_0_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 4	: 0 11 12 9 14 s: 46
+[RES_0]    L  4 : 0 22 29 24 28 s: 103, mem: 25, time: 0.981068
+---------------------------------------------------------------------------------------------
+Loop_4_2_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #2
+	(adding required pred. from inp_c to ab. cube) #20
+	(adding from pre_c to cc. cube) #2
+	(adding pred. from inp_c to cc. cube) #20
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #7
+	(adding required pred. from inp_c to ab. cube) #30
+	(adding from pre_c to cc. cube) #7
+	(adding pred. from inp_c to cc. cube) #30
+	(abstract cube) 9	(9 + 0 + 0 + 0 + 0)
+	(concrete cube) 9	(9 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #7
+	(adding required pred. from inp_c to ab. cube) #45
+	(adding from pre_c to cc. cube) #7
+	(adding pred. from inp_c to cc. cube) #45
+	(abstract cube) 9	(9 + 0 + 0 + 0 + 0)
+	(concrete cube) 9	(9 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 9 -> 1)
+	(41 + 9 -> 41 + 1)
+	(9 -> 1 -> 1)
+	(9 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s13_Chan1_reg_1_Cmd == 3'd1)
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 9 -> 2)
+	(147 + 9 -> 147 + 2)
+	(9 -> 2 -> 2)
+		(added cond. from num.)	(_s41_CurCmd_reg$next == _s42_CurPtr_reg$next)
+	(9 -> 2 -> 3 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s41_CurCmd_reg == 3'd1) && (_s41_CurCmd_reg == _s42_CurPtr_reg))
+		[1] w3	((_s41_CurCmd_reg == 3'd1) && (_s41_CurCmd_reg == _s42_CurPtr_reg) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(101 + 4 -> 101 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s23_Chan2_reg_1_Cmd == 3'd5)
+		[1] w3	((_s23_Chan2_reg_1_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(50 + 4 -> 50 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s4_Cache_reg_1_State == 2'd1)
+		[1] w2	((_s4_Cache_reg_1_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 4	: 0 12 12 9 15 s: 48
+[RES_0]    L  4 : 0 24 30 24 30 s: 108, mem: 25, time: 1.09257
+---------------------------------------------------------------------------------------------
+Loop_4_3_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #2
+	(adding required pred. from inp_c to ab. cube) #21
+	(adding from pre_c to cc. cube) #2
+	(adding pred. from inp_c to cc. cube) #21
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #31
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #31
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #46
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #46
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(41 + 8 -> 41 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s11_Chan1_reg_0_Cmd == 3'd1)
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(151 + 10 -> 151 + 2)
+	(10 -> 2 -> 2)
+	(10 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (!(ReductionOr_1_3(_s42_CurPtr_reg)) && (_s41_CurCmd_reg == 3'd1))
+		[1] w3	(!(ReductionOr_1_3(_s42_CurPtr_reg)) && (_s41_CurCmd_reg == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(104 + 4 -> 104 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s21_Chan2_reg_0_Cmd == 3'd5)
+		[1] w3	((_s21_Chan2_reg_0_Cmd == 3'd5) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(52 + 4 -> 52 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s2_Cache_reg_0_State == 2'd1)
+		[1] w2	((_s2_Cache_reg_0_State == 2'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 4	: 0 13 12 8 16 s: 49
+[RES_0]    L  4 : 0 26 31 21 32 s: 110, mem: 25, time: 1.18074
+---------------------------------------------------------------------------------------------
+Loop_4_4_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 4 -> 1)
+	(54 + 4 -> 54 + 1)
+	(4 -> 1 -> 1)
+	(4 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) _s3_Cache_reg_1_Data
+		[1] w1	(_s3_Cache_reg_1_Data && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+[RES_1]       0	: 4	: 0 13 12 7 17 s: 49
+[RES_0]    L  4 : 0 26 31 19 34 s: 110, mem: 25, time: 1.1839
+---------------------------------------------------------------------------------------------
+Loop_4_5_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[4] & T & !P+ ]: UNSAT
+[RES_1]       0	: 4	: 0 13 12 7 17 s: 49
+[RES_0]    L  4 : 0 26 31 19 34 s: 110, mem: 25, time: 1.18398
+	[Forward propagation]:
+[RES_1]       0	: 5	: 0 13 12 7 5 12 s: 49
+[RES_0]    L  5 : 0 26 31 19 10 24 s: 110, mem: 25, time: 1.3968
+---------------------------------------------------------------------------------------------
+Loop_5_0_0
+---------------------------------------------------------------------------------------------
+	SAT_a ? [ F[5] & T & !P+ ]: SAT
+	(adding pred. from next_c to next) #2
+	(adding from pre_c to ab. cube) #3
+	(adding required pred. from inp_c to ab. cube) #1
+	(adding from pre_c to cc. cube) #3
+	(adding pred. from inp_c to cc. cube) #1
+	(bad cube [in !P+]) sz: 4
+	(abstract cube) 4	(4 + 0 + 0 + 0 + 0)
+	(concrete cube) 4	(4 + 0 + 0 + 0)
+	SAT_a ? [ F[4] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #6
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #6
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #39
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #39
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #11
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #11
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(167 + 13 -> 167 + 2)
+	(13 -> 2 -> 2)
+	(13 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s41_CurCmd_reg != 3'd2) && (_s21_Chan2_reg_0_Cmd == 3'd3))
+		[1] w3	((_s41_CurCmd_reg != 3'd2) && (_s21_Chan2_reg_0_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(121 + 10 -> 121 + 2)
+	(10 -> 2 -> 1)
+	(10 -> 2 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s31_Chan3_reg_0_Cmd == 3'd4)
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #11
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #11
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #36
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #36
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #38
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #38
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s17_Chan1_reg_3_Cmd == 3'd2)
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #37
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #37
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s19_Chan1_reg_4_Cmd == 3'd2)
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #39
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #39
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s15_Chan1_reg_2_Cmd == 3'd2)
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #40
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #40
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s13_Chan1_reg_1_Cmd == 3'd2)
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #41
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #41
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s11_Chan1_reg_0_Cmd == 3'd2)
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(175 + 13 -> 175 + 3)
+	(13 -> 3 -> 3)
+	(13 -> 3 -> 3)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (!(ReductionOr_1_3(_s21_Chan2_reg_0_Cmd)) && (_s41_CurCmd_reg == 3'd2) && (_s21_Chan2_reg_0_Cmd == _s31_Chan3_reg_0_Cmd))
+		[1] w3	(!(ReductionOr_1_3(_s21_Chan2_reg_0_Cmd)) && (_s41_CurCmd_reg == 3'd2) && (_s21_Chan2_reg_0_Cmd == _s31_Chan3_reg_0_Cmd) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #36
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #36
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #42
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #42
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s19_Chan1_reg_4_Cmd == 3'd1)
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #44
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #44
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s15_Chan1_reg_2_Cmd == 3'd1)
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #12
+	(adding required pred. from inp_c to ab. cube) #43
+	(adding from pre_c to cc. cube) #12
+	(adding pred. from inp_c to cc. cube) #43
+	(abstract cube) 14	(14 + 0 + 0 + 0 + 0)
+	(concrete cube) 14	(14 + 0 + 0 + 0)
+	SAT_a ? [ F[0] & T & C+ ]: UNSAT
+		(ab core: 14 -> 1)
+	(43 + 14 -> 43 + 1)
+	(14 -> 1 -> 1)
+	(14 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s17_Chan1_reg_3_Cmd == 3'd1)
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(179 + 13 -> 179 + 3)
+	(13 -> 3 -> 1)
+	(13 -> 3 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s41_CurCmd_reg == 3'd1)
+		[1] w3	((_s41_CurCmd_reg == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(124 + 13 -> 124 + 3)
+	(13 -> 3 -> 2)
+	(13 -> 3 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (!(ReductionOr_1_3(_s31_Chan3_reg_0_Cmd)) && (_s21_Chan2_reg_0_Cmd == 3'd3))
+		[1] w3	(!(ReductionOr_1_3(_s31_Chan3_reg_0_Cmd)) && (_s21_Chan2_reg_0_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 8 -> 1)
+	(72 + 8 -> 72 + 1)
+	(8 -> 1 -> 1)
+	(8 -> 1 -> 1)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (_s31_Chan3_reg_0_Cmd == 3'd4)
+		[1] w3	((_s31_Chan3_reg_0_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[4] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #5
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #5
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #43
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #43
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(183 + 13 -> 183 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(128 + 10 -> 128 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #39
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #39
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(185 + 13 -> 185 + 3)
+	(13 -> 3 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+	(13 -> 3 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(130 + 10 -> 130 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #41
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #41
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(187 + 13 -> 187 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(133 + 10 -> 133 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #37
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #37
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(189 + 13 -> 189 + 3)
+	(13 -> 3 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+	(13 -> 3 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s19_Chan1_reg_4_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(136 + 10 -> 136 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s19_Chan1_reg_4_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #45
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #45
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(191 + 13 -> 191 + 3)
+	(13 -> 3 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+	(13 -> 3 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(139 + 10 -> 139 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #46
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #46
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(193 + 13 -> 193 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(141 + 10 -> 141 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #38
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #38
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(195 + 13 -> 195 + 3)
+	(13 -> 3 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+	(13 -> 3 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(143 + 10 -> 143 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #42
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #42
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(197 + 13 -> 197 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s19_Chan1_reg_4_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(145 + 10 -> 145 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s19_Chan1_reg_4_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s19_Chan1_reg_4_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #40
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #40
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(199 + 13 -> 199 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(147 + 10 -> 147 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #44
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #44
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(201 + 13 -> 201 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+		(added cond. from num.)	(_s23_Chan2_reg_1_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd1) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(149 + 10 -> 149 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s33_Chan3_reg_1_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd1) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #10
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #10
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #35
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #35
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 3)
+	(204 + 13 -> 204 + 3)
+	(13 -> 3 -> 3)
+	(13 -> 3 -> 3)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (!(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd)) && (_s33_Chan3_reg_1_Cmd == _s23_Chan2_reg_1_Cmd) && (_s41_CurCmd_reg == 3'd2))
+		[1] w3	(!(ReductionOr_1_3(_s23_Chan2_reg_1_Cmd)) && (_s33_Chan3_reg_1_Cmd == _s23_Chan2_reg_1_Cmd) && (_s41_CurCmd_reg == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 13 -> 4)
+	(151 + 13 -> 151 + 4)
+	(13 -> 4 -> 3)
+	(13 -> 4 -> 3)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (!(ReductionOr_1_3(_s33_Chan3_reg_1_Cmd)) && (_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg) && (_s23_Chan2_reg_1_Cmd == 3'd3))
+		[1] w3	(!(ReductionOr_1_3(_s33_Chan3_reg_1_Cmd)) && (_s33_Chan3_reg_1_Cmd != _s41_CurCmd_reg) && (_s23_Chan2_reg_1_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: UNSAT
+		(ab core: 8 -> 2)
+	(86 + 8 -> 86 + 2)
+	(8 -> 2 -> 2)
+	(8 -> 2 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) (ReductionOr_1_3(_s41_CurCmd_reg) && (_s33_Chan3_reg_1_Cmd == 3'd4))
+		[1] w3	(ReductionOr_1_3(_s41_CurCmd_reg) && (_s33_Chan3_reg_1_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[4] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #6
+	(adding required pred. from inp_c to ab. cube) #4
+	(adding from pre_c to cc. cube) #6
+	(adding pred. from inp_c to cc. cube) #4
+	(abstract cube) 8	(8 + 0 + 0 + 0 + 0)
+	(concrete cube) 8	(8 + 0 + 0 + 0)
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #37
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #37
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(207 + 13 -> 207 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s19_Chan1_reg_4_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s19_Chan1_reg_4_Cmd == 3'd2))
+		[1] w3	((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s19_Chan1_reg_4_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(154 + 10 -> 154 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s19_Chan1_reg_4_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s35_Chan3_reg_2_Cmd == 3'd4) && (_s19_Chan1_reg_4_Cmd == 3'd2))
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && (_s19_Chan1_reg_4_Cmd == 3'd2) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #45
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #45
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(209 + 13 -> 209 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s13_Chan1_reg_1_Cmd == 3'd1))
+		[1] w3	((_s25_Chan2_reg_2_Cmd == 3'd3) && (_s13_Chan1_reg_1_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(156 + 10 -> 156 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s35_Chan3_reg_2_Cmd == 3'd4) && (_s13_Chan1_reg_1_Cmd == 3'd1))
+		[1] w3	((_s35_Chan3_reg_2_Cmd == 3'd4) && (_s13_Chan1_reg_1_Cmd == 3'd1) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #41
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #41
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(211 + 13 -> 211 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s11_Chan1_reg_0_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(158 + 10 -> 158 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s11_Chan1_reg_0_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4))
+		[1] w3	((_s11_Chan1_reg_0_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #43
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #43
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(213 + 13 -> 213 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s17_Chan1_reg_3_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s25_Chan2_reg_2_Cmd == 3'd3))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s25_Chan2_reg_2_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(160 + 10 -> 160 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s17_Chan1_reg_3_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s35_Chan3_reg_2_Cmd == 3'd4))
+		[1] w3	((_s17_Chan1_reg_3_Cmd == 3'd1) && (_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #39
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #39
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(215 + 13 -> 215 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(162 + 10 -> 162 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s15_Chan1_reg_2_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4))
+		[1] w3	((_s15_Chan1_reg_2_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #40
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #40
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(217 + 13 -> 217 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s13_Chan1_reg_1_Cmd$next)
+	(13 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s25_Chan2_reg_2_Cmd == 3'd3) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[2] & T & C+ ]: UNSAT
+		(ab core: 10 -> 2)
+	(164 + 10 -> 164 + 2)
+	(10 -> 2 -> 2)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+		(added cond. from num.)	(_s13_Chan1_reg_1_Cmd$next != _s35_Chan3_reg_2_Cmd$next)
+	(10 -> 2 -> 4 -> 2)
+
+		[MUS(s)]:
+
+		   (forcing elimination of initial states from original mus)
+		[0] (orig) ((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4))
+		[1] w3	((_s13_Chan1_reg_1_Cmd == 3'd2) && (_s35_Chan3_reg_2_Cmd == 3'd4) && !((!(_s56_$formal$German.sv:33898$1103_EN) && _s63_id150)))
+	SAT_a ? [ F[3] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #8
+	(adding required pred. from inp_c to ab. cube) #44
+	(adding from pre_c to cc. cube) #8
+	(adding pred. from inp_c to cc. cube) #44
+	(abstract cube) 10	(10 + 0 + 0 + 0 + 0)
+	(concrete cube) 10	(10 + 0 + 0 + 0)
+	SAT_a ? [ F[2] & T & C+ ]: SAT
+	(adding from pre_c to ab. cube) #11
+	(adding required pred. from inp_c to ab. cube) #9
+	(adding from pre_c to cc. cube) #11
+	(adding pred. from inp_c to cc. cube) #9
+	(abstract cube) 13	(13 + 0 + 0 + 0 + 0)
+	(concrete cube) 13	(13 + 0 + 0 + 0)
+	SAT_a ? [ F[1] & T & C+ ]: UNSAT
+		(ab core: 13 -> 2)
+	(219 + 13 -> 219 + 2)
+	(13 -> 2 -> 2)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s15_Chan1_reg_2_Cmd$next)
+		(added cond. from num.)	(_s25_Chan2_reg_2_Cmd$next != _s15_Chan1_reg_2_Cmd$next)

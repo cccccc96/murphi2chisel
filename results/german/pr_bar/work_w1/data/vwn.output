@@ -1,0 +1,8 @@
+examples/btor2/german.btor2  examples/btor2/
+Using Btor2Parser
+	(reading btor2 file german/pr_bar/work_w1/w1.btor2)
+	(finished parsing btor2 file german/pr_bar/work_w1/w1.btor2)
+	(starting interpreting btor2 model)
+	(finished interpreting btor2 model)
+	(parsed system with ? state variables)
+	(performing splitting nodes at extract points)

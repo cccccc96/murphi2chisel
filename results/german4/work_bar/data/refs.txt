@@ -1,0 +1,100 @@
+(benchmark) bar
+
+(#2)		!((((_s2_Cache_reg_0_State == 2'd0) || (_s2_Cache_reg_0_State != 2'd0)) && (_s2_Cache_reg_0_State == 2'd0) && ((_i1_io_en_a == 6'd37) || (_i1_io_en_a != 6'd37)) && b$11084 && ReductionOr_1_2(_s2_Cache_reg_0_State$next) && (_s2_Cache_reg_0_State$next == _s2_Cache_reg_0_State$next_rhs)))
+	(id)	5702
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	(#K  )	22
+	(#reg)	4
+	(#inp)	2
+	(#ite)	23
+	(#CF )	52
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s4_Cache_reg_1_State == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State)))
+	(id)	5834
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s4_Cache_reg_1_State$next == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State$next)))
+	(id)	5836
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#5)		!(((_s2_Cache_reg_0_State$next == 2'd0) && ReductionOr_1_2(_s2_Cache_reg_0_State$next)))
+	(id)	13102
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#6)		!(((_s2_Cache_reg_0_State == 2'd0) && ReductionOr_1_2(_s2_Cache_reg_0_State)))
+	(id)	13101
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            (_i1_io_en_a == 6'd37)
+            (_s2_Cache_reg_0_State == 2'd0)
+
+(learned constants)  #2
+            6'd37
+            2'd0
+
+(learned signals)    #2
+            _i1_io_en_a
+            _s2_Cache_reg_0_State
+
+(learned UFs)        #0
+
+(#sim. iterations) 1
+(#ref. iterations) 3
+(#refs) 5
+(#assump. lemmas)  2
+(#lemmas)          7

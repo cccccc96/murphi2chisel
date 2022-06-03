@@ -1,0 +1,32 @@
+(benchmark) w0
+
+(#2)		!(((_s29_Sta_reg_Proc_0_CacheState$next == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd3) && (_i1_io_en_a == 7'd102) && (_s29_Sta_reg_Proc_0_CacheState$next == w$494)))
+	(id)	17505
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	120
+	(#reg)	12
+	(#inp)	2
+	(#ite)	131
+	(#CF )	270
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s33_Sta_reg_Proc_1_CacheState$next == 2'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd3) && (_i1_io_en_a == 7'd103) && (_s33_Sta_reg_Proc_1_CacheState$next == w$526)))
+	(id)	17597
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	119
+	(#reg)	12
+	(#inp)	2
+	(#ite)	130
+	(#CF )	266
+	(#Cc )	1
+	(#Cct)	1
+	(#Ex )	0
+	(#Ext)	0
+

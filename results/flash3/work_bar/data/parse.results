@@ -1,0 +1,410 @@
+------------
+Size Summary
+------------
+
+State variables (#71)
+	(1-bit)	47
+	(2-bit)	20
+	(3-bit)	4
+
+Inputs (#5)
+	(1-bit)	4
+	(8-bit)	1
+
+Constants (#215)
+	(1-bit)	1
+	(2-bit)	3
+	(3-bit)	6
+	(8-bit)	205
+
+---------------
+State Variables
+---------------
+_s69_id151                      (1-bit)
+_s68_id147                      (1-bit)
+_s66_id140                      (1-bit)
+_s64_Sta_reg_WbMsg_HomeProc     (1-bit)
+_s41_Sta_reg_Proc_2_InvMarked    (1-bit)
+_s59_Sta_reg_UniMsg_2_Data      (1-bit)
+_s37_Sta_reg_Proc_1_InvMarked    (1-bit)
+_s55_Sta_reg_UniMsg_1_Data      (1-bit)
+_s33_Sta_reg_Proc_0_InvMarked    (1-bit)
+_s51_Sta_reg_UniMsg_0_Data      (1-bit)
+_s63_Sta_reg_WbMsg_Data         (1-bit)
+_s47_Sta_reg_ShWbMsg_Data       (1-bit)
+_s31_Sta_reg_Proc_0_CacheData    (1-bit)
+_s35_Sta_reg_Proc_1_CacheData    (1-bit)
+_s39_Sta_reg_Proc_2_CacheData    (1-bit)
+_s24_Sta_reg_HomeUniMsg_HomeProc    (1-bit)
+_s29_Sta_reg_MemData            (1-bit)
+_s19_Sta_reg_HomeProc_InvMarked    (1-bit)
+_s23_Sta_reg_HomeUniMsg_Data    (1-bit)
+_s17_Sta_reg_HomeProc_CacheData    (1-bit)
+_s30_Sta_reg_NakcMsg_Cmd        (1-bit)
+_s8_Sta_reg_Dir_InvSet_1        (1-bit)
+_s9_Sta_reg_Dir_InvSet_2        (1-bit)
+_s7_Sta_reg_Dir_InvSet_0        (1-bit)
+_s5_Sta_reg_Dir_HomeInvSet      (1-bit)
+_s15_Sta_reg_Dir_ShrVld         (1-bit)
+_s21_Sta_reg_HomeRpMsg_Cmd      (1-bit)
+_s48_Sta_reg_ShWbMsg_HomeProc    (1-bit)
+_s43_Sta_reg_RpMsg_0_Cmd        (1-bit)
+_s44_Sta_reg_RpMsg_1_Cmd        (1-bit)
+_s45_Sta_reg_RpMsg_2_Cmd        (1-bit)
+_s6_Sta_reg_Dir_HomeShrSet      (1-bit)
+_s12_Sta_reg_Dir_ShrSet_0       (1-bit)
+_s13_Sta_reg_Dir_ShrSet_1       (1-bit)
+_s14_Sta_reg_Dir_ShrSet_2       (1-bit)
+_s4_Sta_reg_Dir_HomeHeadPtr     (1-bit)
+_s3_Sta_reg_Dir_HeadVld         (1-bit)
+_s52_Sta_reg_UniMsg_0_HomeProc    (1-bit)
+_s56_Sta_reg_UniMsg_1_HomeProc    (1-bit)
+_s10_Sta_reg_Dir_Local          (1-bit)
+_s11_Sta_reg_Dir_Pending        (1-bit)
+_s60_Sta_reg_UniMsg_2_HomeProc    (1-bit)
+_s62_Sta_reg_WbMsg_Cmd          (1-bit)
+_s1_Sta_reg_Dir_Dirty           (1-bit)
+_s0_Sta_reg_CurrData            (1-bit)
+_s70_id156                      (1-bit)
+_s67_id142                      (1-bit)
+_s65_Sta_reg_WbMsg_Proc         (2-bit)
+_s42_Sta_reg_Proc_2_ProcCmd     (2-bit)
+_s38_Sta_reg_Proc_1_ProcCmd     (2-bit)
+_s34_Sta_reg_Proc_0_ProcCmd     (2-bit)
+_s53_Sta_reg_UniMsg_0_Proc      (2-bit)
+_s57_Sta_reg_UniMsg_1_Proc      (2-bit)
+_s61_Sta_reg_UniMsg_2_Proc      (2-bit)
+_s25_Sta_reg_HomeUniMsg_Proc    (2-bit)
+_s16_Sta_reg_HomeInvMsg_Cmd     (2-bit)
+_s28_Sta_reg_InvMsg_2_Cmd       (2-bit)
+_s27_Sta_reg_InvMsg_1_Cmd       (2-bit)
+_s26_Sta_reg_InvMsg_0_Cmd       (2-bit)
+_s49_Sta_reg_ShWbMsg_Proc       (2-bit)
+_s20_Sta_reg_HomeProc_ProcCmd    (2-bit)
+_s2_Sta_reg_Dir_HeadPtr         (2-bit)
+_s46_Sta_reg_ShWbMsg_Cmd        (2-bit)
+_s32_Sta_reg_Proc_0_CacheState    (2-bit)
+_s36_Sta_reg_Proc_1_CacheState    (2-bit)
+_s40_Sta_reg_Proc_2_CacheState    (2-bit)
+_s18_Sta_reg_HomeProc_CacheState    (2-bit)
+_s50_Sta_reg_UniMsg_0_Cmd       (3-bit)
+_s54_Sta_reg_UniMsg_1_Cmd       (3-bit)
+_s58_Sta_reg_UniMsg_2_Cmd       (3-bit)
+_s22_Sta_reg_HomeUniMsg_Cmd     (3-bit)
+
+------
+Inputs
+------
+_i5_id90425                     (1-bit)
+_i4_id90420                     (1-bit)
+_i3_id90412                     (1-bit)
+_i2_reset                       (1-bit)
+_i1_io_en_a                     (8-bit)
+
+---------
+Constants
+---------
+1'd0
+2'd0
+2'd1
+2'd2
+3'd0
+3'd5
+3'd4
+3'd1
+3'd2
+3'd3
+8'd1
+8'd2
+8'd3
+8'd4
+8'd5
+8'd6
+8'd7
+8'd8
+8'd9
+8'd10
+8'd11
+8'd12
+8'd13
+8'd14
+8'd15
+8'd16
+8'd17
+8'd18
+8'd19
+8'd20
+8'd21
+8'd22
+8'd23
+8'd24
+8'd25
+8'd26
+8'd27
+8'd28
+8'd29
+8'd30
+8'd31
+8'd32
+8'd33
+8'd34
+8'd35
+8'd36
+8'd37
+8'd38
+8'd39
+8'd40
+8'd41
+8'd42
+8'd43
+8'd44
+8'd45
+8'd46
+8'd47
+8'd48
+8'd49
+8'd50
+8'd51
+8'd52
+8'd53
+8'd54
+8'd55
+8'd56
+8'd57
+8'd58
+8'd59
+8'd60
+8'd61
+8'd62
+8'd63
+8'd64
+8'd65
+8'd66
+8'd67
+8'd68
+8'd69
+8'd70
+8'd71
+8'd72
+8'd73
+8'd74
+8'd75
+8'd76
+8'd77
+8'd78
+8'd79
+8'd80
+8'd81
+8'd82
+8'd83
+8'd84
+8'd85
+8'd86
+8'd87
+8'd88
+8'd89
+8'd90
+8'd91
+8'd92
+8'd93
+8'd94
+8'd95
+8'd96
+8'd97
+8'd98
+8'd99
+8'd100
+8'd101
+8'd102
+8'd103
+8'd104
+8'd105
+8'd106
+8'd107
+8'd108
+8'd109
+8'd110
+8'd111
+8'd112
+8'd113
+8'd114
+8'd115
+8'd116
+8'd117
+8'd118
+8'd119
+8'd120
+8'd121
+8'd122
+8'd123
+8'd124
+8'd125
+8'd126
+8'd127
+8'd128
+8'd129
+8'd130
+8'd131
+8'd132
+8'd133
+8'd134
+8'd135
+8'd136
+8'd137
+8'd138
+8'd139
+8'd140
+8'd141
+8'd142
+8'd143
+8'd144
+8'd145
+8'd146
+8'd147
+8'd148
+8'd149
+8'd150
+8'd151
+8'd152
+8'd153
+8'd154
+8'd155
+8'd156
+8'd157
+8'd158
+8'd159
+8'd160
+8'd161
+8'd162
+8'd163
+8'd164
+8'd165
+8'd166
+8'd167
+8'd168
+8'd169
+8'd170
+8'd171
+8'd172
+8'd173
+8'd174
+8'd175
+8'd176
+8'd177
+8'd178
+8'd179
+8'd180
+8'd181
+8'd182
+8'd183
+8'd184
+8'd185
+8'd186
+8'd187
+8'd188
+8'd189
+8'd190
+8'd191
+8'd192
+8'd193
+8'd194
+8'd195
+8'd196
+8'd197
+8'd198
+8'd199
+8'd200
+8'd201
+8'd202
+8'd203
+8'd204
+8'd205
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#13
+ReductionOr_1_8	#1
+
+------------------
+Initial Conditions
+------------------
+
+	!_s67_id142
+	_s70_id156
+
+
+
+-----------------
+Dependency List
+-----------------
+
+Depth: 0
+	(1-bit) #4	n0	u0	c0	e0	property	<= _s67_id142, _s66_id140, _s68_id147, _s69_id151, 
+
+Depth: 1
+	(1-bit) #2	n1	u0	c0	e0	_s69_id151$next	<= _s40_Sta_reg_Proc_2_CacheState, _s36_Sta_reg_Proc_1_CacheState, 
+	(1-bit) #2	n1	u0	c0	e0	_s68_id147$next	<= _s36_Sta_reg_Proc_1_CacheState, _s32_Sta_reg_Proc_0_CacheState, 
+	(1-bit) #2	n1	u0	c0	e0	_s66_id140$next	<= _s40_Sta_reg_Proc_2_CacheState, _s32_Sta_reg_Proc_0_CacheState, 
+	(1-bit) #0	n0	u0	c0	e0	_s67_id142$next	<= 
+
+Depth: 2
+	(2-bit) #14	n195	u4	c1	e0	_s32_Sta_reg_Proc_0_CacheState$next	<= _s22_Sta_reg_HomeUniMsg_Cmd, _s58_Sta_reg_UniMsg_2_Cmd, _s60_Sta_reg_UniMsg_2_HomeProc, _s54_Sta_reg_UniMsg_1_Cmd, _s56_Sta_reg_UniMsg_1_HomeProc, _s50_Sta_reg_UniMsg_0_Cmd, _s26_Sta_reg_InvMsg_0_Cmd, _s25_Sta_reg_HomeUniMsg_Proc, _s24_Sta_reg_HomeUniMsg_HomeProc, _s61_Sta_reg_UniMsg_2_Proc, _s57_Sta_reg_UniMsg_1_Proc, _s34_Sta_reg_Proc_0_ProcCmd, _s33_Sta_reg_Proc_0_InvMarked, 
+	(2-bit) #14	n194	u1	c1	e0	_s36_Sta_reg_Proc_1_CacheState$next	<= _s22_Sta_reg_HomeUniMsg_Cmd, _s58_Sta_reg_UniMsg_2_Cmd, _s60_Sta_reg_UniMsg_2_HomeProc, _s54_Sta_reg_UniMsg_1_Cmd, _s50_Sta_reg_UniMsg_0_Cmd, _s52_Sta_reg_UniMsg_0_HomeProc, _s27_Sta_reg_InvMsg_1_Cmd, _s25_Sta_reg_HomeUniMsg_Proc, _s24_Sta_reg_HomeUniMsg_HomeProc, _s61_Sta_reg_UniMsg_2_Proc, _s53_Sta_reg_UniMsg_0_Proc, _s38_Sta_reg_Proc_1_ProcCmd, _s37_Sta_reg_Proc_1_InvMarked, 
+	(2-bit) #14	n193	u1	c1	e0	_s40_Sta_reg_Proc_2_CacheState$next	<= _s22_Sta_reg_HomeUniMsg_Cmd, _s58_Sta_reg_UniMsg_2_Cmd, _s54_Sta_reg_UniMsg_1_Cmd, _s56_Sta_reg_UniMsg_1_HomeProc, _s50_Sta_reg_UniMsg_0_Cmd, _s52_Sta_reg_UniMsg_0_HomeProc, _s28_Sta_reg_InvMsg_2_Cmd, _s25_Sta_reg_HomeUniMsg_Proc, _s24_Sta_reg_HomeUniMsg_HomeProc, _s57_Sta_reg_UniMsg_1_Proc, _s53_Sta_reg_UniMsg_0_Proc, _s42_Sta_reg_Proc_2_ProcCmd, _s41_Sta_reg_Proc_2_InvMarked, 
+
+Depth: 3
+	(1-bit) #4	n183	u0	c0	e0	_s41_Sta_reg_Proc_2_InvMarked$next	<= 
+	(1-bit) #4	n184	u0	c0	e0	_s37_Sta_reg_Proc_1_InvMarked$next	<= 
+	(1-bit) #4	n185	u0	c0	e0	_s33_Sta_reg_Proc_0_InvMarked$next	<= 
+	(1-bit) #6	n196	u2	c0	e0	_s24_Sta_reg_HomeUniMsg_HomeProc$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s4_Sta_reg_Dir_HomeHeadPtr, _s20_Sta_reg_HomeProc_ProcCmd, 
+	(1-bit) #10	n200	u3	c0	e0	_s52_Sta_reg_UniMsg_0_HomeProc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s43_Sta_reg_RpMsg_0_Cmd, 
+	(1-bit) #10	n200	u2	c0	e0	_s56_Sta_reg_UniMsg_1_HomeProc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s44_Sta_reg_RpMsg_1_Cmd, 
+	(1-bit) #10	n199	u2	c0	e0	_s60_Sta_reg_UniMsg_2_HomeProc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s45_Sta_reg_RpMsg_2_Cmd, 
+	(2-bit) #3	n202	u2	c0	e0	_s42_Sta_reg_Proc_2_ProcCmd$next	<= 
+	(2-bit) #3	n203	u2	c0	e0	_s38_Sta_reg_Proc_1_ProcCmd$next	<= 
+	(2-bit) #3	n204	u2	c0	e0	_s34_Sta_reg_Proc_0_ProcCmd$next	<= 
+	(2-bit) #9	n174	u1	c0	e0	_s53_Sta_reg_UniMsg_0_Proc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s43_Sta_reg_RpMsg_0_Cmd, 
+	(2-bit) #9	n174	u0	c0	e0	_s57_Sta_reg_UniMsg_1_Proc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s44_Sta_reg_RpMsg_1_Cmd, 
+	(2-bit) #9	n173	u0	c0	e0	_s61_Sta_reg_UniMsg_2_Proc$next	<= _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s45_Sta_reg_RpMsg_2_Cmd, 
+	(2-bit) #6	n197	u2	c0	e0	_s25_Sta_reg_HomeUniMsg_Proc$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s2_Sta_reg_Dir_HeadPtr, _s20_Sta_reg_HomeProc_ProcCmd, 
+	(2-bit) #24	n194	u3	c2	e0	_s28_Sta_reg_InvMsg_2_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s15_Sta_reg_Dir_ShrVld, _s5_Sta_reg_Dir_HomeInvSet, _s7_Sta_reg_Dir_InvSet_0, _s9_Sta_reg_Dir_InvSet_2, _s8_Sta_reg_Dir_InvSet_1, 
+	(2-bit) #24	n194	u3	c2	e0	_s27_Sta_reg_InvMsg_1_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s15_Sta_reg_Dir_ShrVld, _s5_Sta_reg_Dir_HomeInvSet, _s7_Sta_reg_Dir_InvSet_0, _s9_Sta_reg_Dir_InvSet_2, _s8_Sta_reg_Dir_InvSet_1, 
+	(2-bit) #24	n194	u3	c2	e0	_s26_Sta_reg_InvMsg_0_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s15_Sta_reg_Dir_ShrVld, _s5_Sta_reg_Dir_HomeInvSet, _s7_Sta_reg_Dir_InvSet_0, _s9_Sta_reg_Dir_InvSet_2, _s8_Sta_reg_Dir_InvSet_1, 
+	(3-bit) #20	n206	u3	c0	e0	_s50_Sta_reg_UniMsg_0_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s43_Sta_reg_RpMsg_0_Cmd, 
+	(3-bit) #20	n205	u3	c0	e0	_s54_Sta_reg_UniMsg_1_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s44_Sta_reg_RpMsg_1_Cmd, 
+	(3-bit) #20	n204	u3	c0	e0	_s58_Sta_reg_UniMsg_2_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s10_Sta_reg_Dir_Local, _s3_Sta_reg_Dir_HeadVld, _s2_Sta_reg_Dir_HeadPtr, _s4_Sta_reg_Dir_HomeHeadPtr, _s14_Sta_reg_Dir_ShrSet_2, _s13_Sta_reg_Dir_ShrSet_1, _s12_Sta_reg_Dir_ShrSet_0, _s6_Sta_reg_Dir_HomeShrSet, _s20_Sta_reg_HomeProc_ProcCmd, _s45_Sta_reg_RpMsg_2_Cmd, 
+	(3-bit) #10	n203	u3	c0	e0	_s22_Sta_reg_HomeUniMsg_Cmd$next	<= _s18_Sta_reg_HomeProc_CacheState, _s1_Sta_reg_Dir_Dirty, _s11_Sta_reg_Dir_Pending, _s20_Sta_reg_HomeProc_ProcCmd, 
+
+Depth: 4
+	(1-bit) #30	n194	u3	c0	e0	_s8_Sta_reg_Dir_InvSet_1$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #30	n194	u3	c0	e0	_s9_Sta_reg_Dir_InvSet_2$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #30	n194	u4	c0	e0	_s7_Sta_reg_Dir_InvSet_0$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #26	n194	u3	c0	e0	_s5_Sta_reg_Dir_HomeInvSet$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s48_Sta_reg_ShWbMsg_HomeProc, _s21_Sta_reg_HomeRpMsg_Cmd, 
+	(1-bit) #23	n194	u3	c0	e0	_s15_Sta_reg_Dir_ShrVld$next	<= _s46_Sta_reg_ShWbMsg_Cmd, 
+	(1-bit) #3	n185	u1	c0	e0	_s43_Sta_reg_RpMsg_0_Cmd$next	<= 
+	(1-bit) #3	n184	u1	c0	e0	_s44_Sta_reg_RpMsg_1_Cmd$next	<= 
+	(1-bit) #3	n183	u1	c0	e0	_s45_Sta_reg_RpMsg_2_Cmd$next	<= 
+	(1-bit) #22	n193	u3	c0	e0	_s6_Sta_reg_Dir_HomeShrSet$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s48_Sta_reg_ShWbMsg_HomeProc, _s21_Sta_reg_HomeRpMsg_Cmd, 
+	(1-bit) #23	n194	u4	c0	e0	_s12_Sta_reg_Dir_ShrSet_0$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #23	n194	u3	c0	e0	_s13_Sta_reg_Dir_ShrSet_1$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #23	n194	u3	c0	e0	_s14_Sta_reg_Dir_ShrSet_2$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #23	n170	u1	c0	e0	_s4_Sta_reg_Dir_HomeHeadPtr$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s48_Sta_reg_ShWbMsg_HomeProc, 
+	(1-bit) #23	n195	u3	c0	e0	_s3_Sta_reg_Dir_HeadVld$next	<= _s62_Sta_reg_WbMsg_Cmd, 
+	(1-bit) #19	n200	u3	c0	e0	_s10_Sta_reg_Dir_Local$next	<= 
+	(1-bit) #24	n202	u3	c0	e0	_s11_Sta_reg_Dir_Pending$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s30_Sta_reg_NakcMsg_Cmd, 
+	(1-bit) #24	n195	u3	c0	e0	_s1_Sta_reg_Dir_Dirty$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s62_Sta_reg_WbMsg_Cmd, 
+	(2-bit) #6	n201	u2	c0	e0	_s20_Sta_reg_HomeProc_ProcCmd$next	<= 
+	(2-bit) #23	n170	u1	c0	e0	_s2_Sta_reg_Dir_HeadPtr$next	<= _s46_Sta_reg_ShWbMsg_Cmd, _s49_Sta_reg_ShWbMsg_Proc, 
+	(2-bit) #23	n202	u3	c1	e0	_s18_Sta_reg_HomeProc_CacheState$next	<= _s19_Sta_reg_HomeProc_InvMarked, 
+
+Depth: 5
+	(1-bit) #20	n201	u3	c0	e0	_s19_Sta_reg_HomeProc_InvMarked$next	<= 
+	(1-bit) #16	n180	u3	c0	e0	_s30_Sta_reg_NakcMsg_Cmd$next	<= 
+	(1-bit) #1	n2	u0	c0	e0	_s21_Sta_reg_HomeRpMsg_Cmd$next	<= 
+	(1-bit) #13	n151	u2	c0	e0	_s48_Sta_reg_ShWbMsg_HomeProc$next	<= 
+	(1-bit) #7	n189	u3	c0	e0	_s62_Sta_reg_WbMsg_Cmd$next	<= 
+	(2-bit) #13	n151	u2	c0	e0	_s49_Sta_reg_ShWbMsg_Proc$next	<= 
+	(2-bit) #13	n151	u2	c0	e0	_s46_Sta_reg_ShWbMsg_Cmd$next	<= 
+
+-----------------

@@ -1,0 +1,270 @@
+
+
+1. Executing Verilog-2005 frontend: mutual/pr_bar/work_w0/mutual.sv
+Parsing SystemVerilog input from `mutual/pr_bar/work_w0/mutual.sv' to AST representation.
+Generating RTLIL representation for module `\rule_Try'.
+Generating RTLIL representation for module `\rule_Crit'.
+Generating RTLIL representation for module `\rule_Exit'.
+Generating RTLIL representation for module `\rule_Idle'.
+Generating RTLIL representation for module `\rule_Try_1'.
+Generating RTLIL representation for module `\rule_Crit_1'.
+Generating RTLIL representation for module `\rule_Exit_1'.
+Generating RTLIL representation for module `\rule_Idle_1'.
+Generating RTLIL representation for module `\mutual2'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   1 design levels: mutual2             
+root of   0 design levels: rule_Idle_1         
+root of   0 design levels: rule_Exit_1         
+root of   0 design levels: rule_Crit_1         
+root of   0 design levels: rule_Try_1          
+root of   0 design levels: rule_Idle           
+root of   0 design levels: rule_Exit           
+root of   0 design levels: rule_Crit           
+root of   0 design levels: rule_Try            
+Automatically selected mutual2 as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+
+2.3. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+Removed 0 unused modules.
+Module mutual2 directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+
+3.2. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+Removed 0 unused modules.
+Module mutual2 directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+
+4.2. Analyzing design hierarchy..
+Top module:  \mutual2
+Used module:     \rule_Idle_1
+Used module:     \rule_Exit_1
+Used module:     \rule_Crit_1
+Used module:     \rule_Try_1
+Used module:     \rule_Idle
+Used module:     \rule_Exit
+Used module:     \rule_Crit
+Used module:     \rule_Try
+Removed 0 unused modules.
+Module mutual2 directly or indirectly contains formal properties -> setting "keep" attribute.
+Renaming module mutual2 to main.
+
+5. Executing EXPOSE pass (exposing internal signals as outputs).
+Warning: Selection "prop_neg" did not match any object.
+
+6. Executing PROC pass (convert processes to netlists).
+
+6.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 8 switch rules as full_case in process $proc$mutual/pr_bar/work_w0/mutual.sv:326$79 in module main.
+Removed a total of 0 dead cases.
+
+6.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 5 assignments to connections.
+
+6.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$105'.
+  Set init value: $formal$mutual/pr_bar/work_w0/mutual.sv:360$44_EN = 1'0
+Found init rule in `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$103'.
+  Set init value: $formal$mutual/pr_bar/work_w0/mutual.sv:356$43_EN = 1'0
+
+6.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$105'.
+Creating decoders for process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$103'.
+Creating decoders for process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$99'.
+Creating decoders for process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+     1/4: $0$formal$mutual/pr_bar/work_w0/mutual.sv:356$43_EN[0:0]$83
+     2/4: $0$formal$mutual/pr_bar/work_w0/mutual.sv:356$43_CHECK[0:0]$82
+     3/4: $0$formal$mutual/pr_bar/work_w0/mutual.sv:360$44_EN[0:0]$85
+     4/4: $0$formal$mutual/pr_bar/work_w0/mutual.sv:360$44_CHECK[0:0]$84
+Creating decoders for process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+     1/2: $0\n_reg_1[1:0]
+     2/2: $0\n_reg_0[1:0]
+
+6.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:125$41_CHECK' from process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$99'.
+No latch inferred for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:125$41_EN' from process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$99'.
+
+6.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:356$43_CHECK' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+  created $dff cell `$procdff$139' with positive edge clock.
+Creating register for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:356$43_EN' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+  created $dff cell `$procdff$140' with positive edge clock.
+Creating register for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:360$44_CHECK' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+  created $dff cell `$procdff$141' with positive edge clock.
+Creating register for signal `\main.$formal$mutual/pr_bar/work_w0/mutual.sv:360$44_EN' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+  created $dff cell `$procdff$142' with positive edge clock.
+Creating register for signal `\main.\n_reg_0' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+  created $dff cell `$procdff$143' with positive edge clock.
+Creating register for signal `\main.\n_reg_1' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+  created $dff cell `$procdff$144' with positive edge clock.
+Creating register for signal `\main.\x_reg' using process `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+  created $dff cell `$procdff$145' with positive edge clock.
+
+6.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$105'.
+Removing empty process `main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$103'.
+Removing empty process `main.$proc$mutual/pr_bar/work_w0/mutual.sv:0$99'.
+Found and cleaned up 2 empty switches in `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+Removing empty process `main.$proc$mutual/pr_bar/work_w0/mutual.sv:354$81'.
+Found and cleaned up 8 empty switches in `\main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+Removing empty process `main.$proc$mutual/pr_bar/work_w0/mutual.sv:326$79'.
+Cleaned up 10 empty switches.
+
+6.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module main.
+<suppressed ~7 debug messages>
+Optimizing module rule_Idle_1.
+Optimizing module rule_Exit_1.
+Optimizing module rule_Crit_1.
+Optimizing module rule_Try_1.
+<suppressed ~1 debug messages>
+Optimizing module rule_Idle.
+Optimizing module rule_Exit.
+Optimizing module rule_Crit.
+Optimizing module rule_Try.
+<suppressed ~1 debug messages>
+Removed 2 unused cells and 86 unused wires.
+
+7. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+8. Executing PMUXTREE pass.
+
+9. Executing MEMORY pass.
+
+9.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+9.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+9.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+9.4. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+9.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \main..
+Finding unused cells or wires in module \rule_Crit..
+Finding unused cells or wires in module \rule_Crit_1..
+Finding unused cells or wires in module \rule_Exit..
+Finding unused cells or wires in module \rule_Exit_1..
+Finding unused cells or wires in module \rule_Idle..
+Finding unused cells or wires in module \rule_Idle_1..
+Finding unused cells or wires in module \rule_Try..
+Finding unused cells or wires in module \rule_Try_1..
+
+9.6. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+9.7. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+9.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \main..
+Finding unused cells or wires in module \rule_Crit..
+Finding unused cells or wires in module \rule_Crit_1..
+Finding unused cells or wires in module \rule_Exit..
+Finding unused cells or wires in module \rule_Exit_1..
+Finding unused cells or wires in module \rule_Idle..
+Finding unused cells or wires in module \rule_Idle_1..
+Finding unused cells or wires in module \rule_Try..
+Finding unused cells or wires in module \rule_Try_1..
+
+9.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+9.10. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FLATTEN pass (flatten design).
+Deleting now unused module rule_Crit.
+Deleting now unused module rule_Crit_1.
+Deleting now unused module rule_Exit.
+Deleting now unused module rule_Exit_1.
+Deleting now unused module rule_Idle.
+Deleting now unused module rule_Idle_1.
+Deleting now unused module rule_Try.
+Deleting now unused module rule_Try_1.
+<suppressed ~8 debug messages>
+Removed 0 unused cells and 95 unused wires.
+
+11. Executing SETUNDEF pass (replace undef values with defined constants).
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module main...
+Found and reported 0 problems.
+
+13. Executing RTLIL backend.
+Output filename: mutual/pr_bar/work_w0/w0.ilang
+
+14. Executing Verilog backend.
+
+14.1. Executing BMUXMAP pass.
+
+14.2. Executing DEMUXMAP pass.
+Dumping module `\main'.
+
+15. Executing BTOR backend.
+
+15.1. Executing BMUXMAP pass.
+
+15.2. Executing DEMUXMAP pass.

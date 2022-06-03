@@ -1,0 +1,193 @@
+---------------------
+WITHOUT PREPROCESSING
+---------------------
+
+------------
+Size Summary
+------------
+
+State variables (#64)
+	(1-bit)	42
+	(2-bit)	5
+	(3-bit)	17
+
+Inputs (#10)
+	(1-bit)	9
+	(7-bit)	1
+
+Constants (#74)
+	(1-bit)	2
+	(2-bit)	4
+	(3-bit)	8
+	(4-bit)	9
+	(5-bit)	17
+	(6-bit)	33
+	(7-bit)	1
+
+---------------
+State Variables
+---------------
+_s63_id150                      (1-bit)
+_s62_$formal$German.sv:33922$1109_CHECK    (1-bit)
+_s61_$formal$German.sv:33918$1108_CHECK    (1-bit)
+_s60_$formal$German.sv:33914$1107_CHECK    (1-bit)
+_s59_$formal$German.sv:33910$1106_CHECK    (1-bit)
+_s58_$formal$German.sv:33906$1105_CHECK    (1-bit)
+_s57_$formal$German.sv:33902$1104_CHECK    (1-bit)
+_s56_$formal$German.sv:33898$1103_EN    (1-bit)
+_s55_$formal$German.sv:33898$1103_CHECK    (1-bit)
+_s54_ShrSet_reg_4               (1-bit)
+_s53_ShrSet_reg_3               (1-bit)
+_s52_ShrSet_reg_2               (1-bit)
+_s51_ShrSet_reg_1               (1-bit)
+_s50_ShrSet_reg_0               (1-bit)
+_s49_MemData_reg                (1-bit)
+_s48_InvSet_reg_4               (1-bit)
+_s47_InvSet_reg_3               (1-bit)
+_s46_InvSet_reg_2               (1-bit)
+_s45_InvSet_reg_1               (1-bit)
+_s44_InvSet_reg_0               (1-bit)
+_s43_ExGntd_reg                 (1-bit)
+_s40_Chan3_reg_4_Data           (1-bit)
+_s38_Chan3_reg_3_Data           (1-bit)
+_s36_Chan3_reg_2_Data           (1-bit)
+_s34_Chan3_reg_1_Data           (1-bit)
+_s32_Chan3_reg_0_Data           (1-bit)
+_s30_Chan2_reg_4_Data           (1-bit)
+_s28_Chan2_reg_3_Data           (1-bit)
+_s26_Chan2_reg_2_Data           (1-bit)
+_s24_Chan2_reg_1_Data           (1-bit)
+_s22_Chan2_reg_0_Data           (1-bit)
+_s20_Chan1_reg_4_Data           (1-bit)
+_s18_Chan1_reg_3_Data           (1-bit)
+_s16_Chan1_reg_2_Data           (1-bit)
+_s14_Chan1_reg_1_Data           (1-bit)
+_s12_Chan1_reg_0_Data           (1-bit)
+_s9_Cache_reg_4_Data            (1-bit)
+_s7_Cache_reg_3_Data            (1-bit)
+_s5_Cache_reg_2_Data            (1-bit)
+_s3_Cache_reg_1_Data            (1-bit)
+_s1_Cache_reg_0_Data            (1-bit)
+_s0_AuxData_reg                 (1-bit)
+_s10_Cache_reg_4_State          (2-bit)
+_s8_Cache_reg_3_State           (2-bit)
+_s6_Cache_reg_2_State           (2-bit)
+_s4_Cache_reg_1_State           (2-bit)
+_s2_Cache_reg_0_State           (2-bit)
+_s42_CurPtr_reg                 (3-bit)
+_s41_CurCmd_reg                 (3-bit)
+_s39_Chan3_reg_4_Cmd            (3-bit)
+_s37_Chan3_reg_3_Cmd            (3-bit)
+_s35_Chan3_reg_2_Cmd            (3-bit)
+_s33_Chan3_reg_1_Cmd            (3-bit)
+_s31_Chan3_reg_0_Cmd            (3-bit)
+_s29_Chan2_reg_4_Cmd            (3-bit)
+_s27_Chan2_reg_3_Cmd            (3-bit)
+_s25_Chan2_reg_2_Cmd            (3-bit)
+_s23_Chan2_reg_1_Cmd            (3-bit)
+_s21_Chan2_reg_0_Cmd            (3-bit)
+_s19_Chan1_reg_4_Cmd            (3-bit)
+_s17_Chan1_reg_3_Cmd            (3-bit)
+_s15_Chan1_reg_2_Cmd            (3-bit)
+_s13_Chan1_reg_1_Cmd            (3-bit)
+_s11_Chan1_reg_0_Cmd            (3-bit)
+
+------
+Inputs
+------
+_i9_id22923                     (1-bit)
+_i8_id22916                     (1-bit)
+_i7_id22909                     (1-bit)
+_i6_id22904                     (1-bit)
+_i5_id22898                     (1-bit)
+_i4_id22892                     (1-bit)
+_i3_id22880                     (1-bit)
+_i2_reset                       (1-bit)
+_i0_clock                       (1-bit)
+_i1_io_en_a                     (7-bit)
+
+---------
+Constants
+---------
+1'd1
+1'd0
+2'd1
+2'd0
+2'd3
+2'd2
+3'd3
+3'd2
+3'd1
+3'd0
+3'd7
+3'd6
+3'd5
+3'd4
+4'd15
+4'd14
+4'd13
+4'd12
+4'd11
+4'd10
+4'd9
+4'd8
+4'd0
+5'd31
+5'd30
+5'd29
+5'd28
+5'd27
+5'd26
+5'd25
+5'd24
+5'd23
+5'd22
+5'd21
+5'd20
+5'd19
+5'd18
+5'd17
+5'd16
+5'd0
+6'd63
+6'd62
+6'd61
+6'd60
+6'd59
+6'd58
+6'd57
+6'd56
+6'd55
+6'd54
+6'd53
+6'd52
+6'd51
+6'd50
+6'd49
+6'd48
+6'd47
+6'd46
+6'd45
+6'd44
+6'd43
+6'd42
+6'd41
+6'd40
+6'd39
+6'd38
+6'd37
+6'd36
+6'd35
+6'd34
+6'd33
+6'd32
+6'd0
+7'd64
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#5
+ReductionOr_1_3	#17
+ReductionOr_1_7	#1
+

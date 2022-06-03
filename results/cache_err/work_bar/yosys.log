@@ -1,0 +1,5 @@
+
+
+1. Executing Verilog-2005 frontend: cache_err2/work_bar/cache_err2.sv
+Parsing SystemVerilog input from `cache_err2/work_bar/cache_err2.sv' to AST representation.
+cache_err2/work_bar/cache_err2.sv:2922: ERROR: syntax error, unexpected '~'

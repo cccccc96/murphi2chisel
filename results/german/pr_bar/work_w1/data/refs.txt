@@ -1,0 +1,41 @@
+(benchmark) w1
+
+(#2)		!((((_s2_Cache_reg_0_State == 2'd0) || (_s2_Cache_reg_0_State != 2'd0)) && (_s2_Cache_reg_0_State == 2'd0) && ((_i1_io_en_a == 7'd46) || (_i1_io_en_a != 7'd46)) && b$17259 && ReductionOr_1_2(_s2_Cache_reg_0_State$next) && (_s2_Cache_reg_0_State$next == _s2_Cache_reg_0_State$next_rhs)))
+	(id)	7860
+	(comment)	ab
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	(#K  )	26
+	(#reg)	4
+	(#inp)	2
+	(#ite)	27
+	(#CF )	60
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+
+(local equalities) #0
+
+(learned predicates) #2
+            (_i1_io_en_a == 7'd46)
+            (_s2_Cache_reg_0_State == 2'd0)
+
+(learned constants)  #2
+            7'd46
+            2'd0
+
+(learned signals)    #2
+            _i1_io_en_a
+            _s2_Cache_reg_0_State
+
+(learned UFs)        #0
+
+(#sim. iterations) 1
+(#ref. iterations) 1
+(#refs) 1
+(#assump. lemmas)  2
+(#lemmas)          3

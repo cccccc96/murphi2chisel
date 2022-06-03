@@ -1,0 +1,209 @@
+------------
+Size Summary
+------------
+
+State variables (#44)
+	(1-bit)	30
+	(2-bit)	4
+	(3-bit)	10
+
+Inputs (#9)
+	(1-bit)	8
+	(6-bit)	1
+
+Constants (#49)
+	(1-bit)	1
+	(2-bit)	3
+	(3-bit)	7
+	(6-bit)	38
+
+---------------
+State Variables
+---------------
+_s42_id105                      (1-bit)
+_s41_id101                      (1-bit)
+_s40_id97                       (1-bit)
+_s39_id93                       (1-bit)
+_s38_id89                       (1-bit)
+_s37_id85                       (1-bit)
+_s35_id78                       (1-bit)
+_s34_ShrSet_reg_2               (1-bit)
+_s33_ShrSet_reg_1               (1-bit)
+_s32_ShrSet_reg_0               (1-bit)
+_s24_Chan3_reg_2_Data           (1-bit)
+_s22_Chan3_reg_1_Data           (1-bit)
+_s20_Chan3_reg_0_Data           (1-bit)
+_s30_InvSet_reg_2               (1-bit)
+_s29_InvSet_reg_1               (1-bit)
+_s31_MemData_reg                (1-bit)
+_s28_InvSet_reg_0               (1-bit)
+_s27_ExGntd_reg                 (1-bit)
+_s12_Chan1_reg_2_Data           (1-bit)
+_s10_Chan1_reg_1_Data           (1-bit)
+_s8_Chan1_reg_0_Data            (1-bit)
+_s18_Chan2_reg_2_Data           (1-bit)
+_s5_Cache_reg_2_Data            (1-bit)
+_s16_Chan2_reg_1_Data           (1-bit)
+_s3_Cache_reg_1_Data            (1-bit)
+_s14_Chan2_reg_0_Data           (1-bit)
+_s1_Cache_reg_0_Data            (1-bit)
+_s0_AuxData_reg                 (1-bit)
+_s43_id110                      (1-bit)
+_s36_id80                       (1-bit)
+_s26_CurPtr_reg                 (2-bit)
+_s2_Cache_reg_0_State           (2-bit)
+_s4_Cache_reg_1_State           (2-bit)
+_s6_Cache_reg_2_State           (2-bit)
+_s11_Chan1_reg_2_Cmd            (3-bit)
+_s9_Chan1_reg_1_Cmd             (3-bit)
+_s25_CurCmd_reg                 (3-bit)
+_s7_Chan1_reg_0_Cmd             (3-bit)
+_s23_Chan3_reg_2_Cmd            (3-bit)
+_s17_Chan2_reg_2_Cmd            (3-bit)
+_s21_Chan3_reg_1_Cmd            (3-bit)
+_s15_Chan2_reg_1_Cmd            (3-bit)
+_s19_Chan3_reg_0_Cmd            (3-bit)
+_s13_Chan2_reg_0_Cmd            (3-bit)
+
+------
+Inputs
+------
+_i9_id9074                      (1-bit)
+_i8_id9067                      (1-bit)
+_i7_id9060                      (1-bit)
+_i6_id9055                      (1-bit)
+_i5_id9049                      (1-bit)
+_i4_id9043                      (1-bit)
+_i3_id9031                      (1-bit)
+_i2_reset                       (1-bit)
+_i1_io_en_a                     (6-bit)
+
+---------
+Constants
+---------
+1'd0
+2'd1
+2'd0
+2'd2
+3'd4
+3'd1
+3'd2
+3'd0
+3'd3
+3'd5
+3'd6
+6'd1
+6'd2
+6'd3
+6'd4
+6'd5
+6'd6
+6'd7
+6'd8
+6'd9
+6'd10
+6'd11
+6'd12
+6'd13
+6'd14
+6'd15
+6'd16
+6'd17
+6'd18
+6'd19
+6'd20
+6'd21
+6'd22
+6'd23
+6'd24
+6'd25
+6'd26
+6'd27
+6'd28
+6'd29
+6'd30
+6'd31
+6'd32
+6'd33
+6'd34
+6'd35
+6'd36
+6'd37
+6'd38
+
+-----------------------------
+Uninterpreted Functions (UFs)
+-----------------------------
+ReductionOr_1_2	#4
+ReductionOr_1_3	#10
+ReductionOr_1_6	#1
+
+------------------
+Initial Conditions
+------------------
+
+	!_s36_id80
+	_s43_id110
+
+
+
+-----------------
+Dependency List
+-----------------
+
+Depth: 0
+	(1-bit) #8	n0	u0	c0	e0	property	<= _s36_id80, _s35_id78, _s37_id85, _s38_id89, _s39_id93, _s40_id97, _s41_id101, _s42_id105, 
+
+Depth: 1
+	(1-bit) #3	n0	u1	c0	e0	_s42_id105$next	<= _s0_AuxData_reg, _s4_Cache_reg_1_State, _s3_Cache_reg_1_Data, 
+	(1-bit) #3	n0	u1	c0	e0	_s41_id101$next	<= _s0_AuxData_reg, _s2_Cache_reg_0_State, _s1_Cache_reg_0_Data, 
+	(1-bit) #3	n0	u0	c0	e0	_s40_id97$next	<= _s0_AuxData_reg, _s27_ExGntd_reg, _s31_MemData_reg, 
+	(1-bit) #2	n1	u1	c0	e0	_s39_id93$next	<= _s4_Cache_reg_1_State, _s2_Cache_reg_0_State, 
+	(1-bit) #2	n1	u1	c0	e0	_s38_id89$next	<= _s4_Cache_reg_1_State, _s2_Cache_reg_0_State, 
+	(1-bit) #2	n1	u1	c0	e0	_s37_id85$next	<= _s4_Cache_reg_1_State, _s2_Cache_reg_0_State, 
+	(1-bit) #2	n1	u1	c0	e0	_s35_id78$next	<= _s4_Cache_reg_1_State, _s2_Cache_reg_0_State, 
+	(1-bit) #0	n0	u0	c0	e0	_s36_id80$next	<= 
+
+Depth: 2
+	(1-bit) #9	n5	u1	c0	e0	_s31_MemData_reg$next	<= _s19_Chan3_reg_0_Cmd, _s21_Chan3_reg_1_Cmd, _s23_Chan3_reg_2_Cmd, _s25_CurCmd_reg, _s20_Chan3_reg_0_Data, _s22_Chan3_reg_1_Data, _s24_Chan3_reg_2_Data, 
+	(1-bit) #5	n5	u1	c0	e0	_s27_ExGntd_reg$next	<= _s19_Chan3_reg_0_Cmd, _s21_Chan3_reg_1_Cmd, _s23_Chan3_reg_2_Cmd, _s25_CurCmd_reg, 
+	(1-bit) #4	n41	u0	c0	e0	_s3_Cache_reg_1_Data$next	<= _s15_Chan2_reg_1_Cmd, _s16_Chan2_reg_1_Data, 
+	(1-bit) #4	n42	u1	c0	e0	_s1_Cache_reg_0_Data$next	<= _s13_Chan2_reg_0_Cmd, _s14_Chan2_reg_0_Data, 
+	(1-bit) #4	n40	u1	c0	e0	_s0_AuxData_reg$next	<= _s6_Cache_reg_2_State, 
+	(2-bit) #3	n18	u1	c0	e0	_s2_Cache_reg_0_State$next	<= _s13_Chan2_reg_0_Cmd, _s19_Chan3_reg_0_Cmd, 
+	(2-bit) #3	n17	u1	c0	e0	_s4_Cache_reg_1_State$next	<= _s15_Chan2_reg_1_Cmd, _s21_Chan3_reg_1_Cmd, 
+
+Depth: 3
+	(1-bit) #5	n7	u1	c0	e0	_s24_Chan3_reg_2_Data$next	<= _s5_Cache_reg_2_Data, _s17_Chan2_reg_2_Cmd, 
+	(1-bit) #5	n8	u1	c0	e0	_s22_Chan3_reg_1_Data$next	<= 
+	(1-bit) #5	n9	u1	c0	e0	_s20_Chan3_reg_0_Data$next	<= 
+	(1-bit) #6	n20	u1	c0	e0	_s16_Chan2_reg_1_Data$next	<= _s26_CurPtr_reg, 
+	(1-bit) #6	n20	u2	c0	e0	_s14_Chan2_reg_0_Data$next	<= _s26_CurPtr_reg, 
+	(2-bit) #3	n16	u1	c0	e0	_s6_Cache_reg_2_State$next	<= _s17_Chan2_reg_2_Cmd, 
+	(3-bit) #9	n32	u5	c0	e0	_s25_CurCmd_reg$next	<= _s17_Chan2_reg_2_Cmd, _s7_Chan1_reg_0_Cmd, _s9_Chan1_reg_1_Cmd, _s11_Chan1_reg_2_Cmd, _s26_CurPtr_reg, 
+	(3-bit) #3	n7	u2	c0	e0	_s23_Chan3_reg_2_Cmd$next	<= _s17_Chan2_reg_2_Cmd, 
+	(3-bit) #3	n8	u2	c0	e0	_s21_Chan3_reg_1_Cmd$next	<= 
+	(3-bit) #6	n27	u2	c0	e0	_s15_Chan2_reg_1_Cmd$next	<= _s26_CurPtr_reg, _s29_InvSet_reg_1, 
+	(3-bit) #3	n9	u2	c0	e0	_s19_Chan3_reg_0_Cmd$next	<= 
+	(3-bit) #6	n27	u3	c0	e0	_s13_Chan2_reg_0_Cmd$next	<= _s26_CurPtr_reg, _s28_InvSet_reg_0, 
+
+Depth: 4
+	(1-bit) #8	n30	u2	c0	e0	_s29_InvSet_reg_1$next	<= _s33_ShrSet_reg_1, 
+	(1-bit) #8	n30	u2	c0	e0	_s28_InvSet_reg_0$next	<= _s32_ShrSet_reg_0, 
+	(1-bit) #4	n39	u0	c0	e0	_s5_Cache_reg_2_Data$next	<= _s18_Chan2_reg_2_Data, 
+	(2-bit) #5	n32	u1	c0	e0	_s26_CurPtr_reg$next	<= 
+	(3-bit) #3	n35	u3	c0	e0	_s11_Chan1_reg_2_Cmd$next	<= 
+	(3-bit) #3	n36	u3	c0	e0	_s9_Chan1_reg_1_Cmd$next	<= 
+	(3-bit) #3	n37	u3	c0	e0	_s7_Chan1_reg_0_Cmd$next	<= 
+	(3-bit) #6	n26	u2	c0	e0	_s17_Chan2_reg_2_Cmd$next	<= _s30_InvSet_reg_2, 
+
+Depth: 5
+	(1-bit) #6	n21	u2	c0	e0	_s33_ShrSet_reg_1$next	<= 
+	(1-bit) #6	n21	u3	c0	e0	_s32_ShrSet_reg_0$next	<= 
+	(1-bit) #8	n30	u2	c0	e0	_s30_InvSet_reg_2$next	<= _s34_ShrSet_reg_2, 
+	(1-bit) #6	n19	u1	c0	e0	_s18_Chan2_reg_2_Data$next	<= 
+
+Depth: 6
+	(1-bit) #6	n20	u2	c0	e0	_s34_ShrSet_reg_2$next	<= 
+
+-----------------

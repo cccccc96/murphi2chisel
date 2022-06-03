@@ -1,0 +1,7 @@
+	(property: all (0 assertions))
+	(unable to fetch property, exiting)
+vwn: vwn.cpp:1176: void connect_all_instances(): Assertion `0' failed.
+	(abstraction: sa+uf)
+reach: avr_util.h:196: bool access_file(F&, std::__cxx11::string, bool) [with F = std::basic_ifstream<char>; std::__cxx11::string = std::__cxx11::basic_string<char>]: Assertion `0' failed.
+Could not access file: cache_err2/work_bar/data/wn.dump
+

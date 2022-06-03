@@ -1,0 +1,5 @@
+vwn: ilang_frontend.h:192: std::__cxx11::string yos::IlangFrontend::get_clock_name(std::__cxx11::string): Assertion `type_it != m_hash.end()' failed.
+	(abstraction: sa+uf)
+reach: avr_util.h:196: bool access_file(F&, std::__cxx11::string, bool) [with F = std::basic_ifstream<char>; std::__cxx11::string = std::__cxx11::basic_string<char>]: Assertion `0' failed.
+Could not access file: mutual/pr_bar/work_w0/data/wn.dump
+

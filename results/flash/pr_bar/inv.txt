@@ -1,0 +1,87 @@
+Property (P): (sz: 1)
+		!(b$45705)
+
+Inductive Invariants (i.e. (Inv -> P) and (Inv ^ T ^ !Inv+) is UNSAT): #1
+(sz: 69)
+		!((!(_s10_Sta_reg_Dir_Pending) && !(_s1_Sta_reg_Dir_Dirty) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((!(_s10_Sta_reg_Dir_Pending) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !(_s1_Sta_reg_Dir_Dirty) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((!(_s10_Sta_reg_Dir_Pending) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd2) && (_s33_Sta_reg_Proc_1_CacheState == _s16_Sta_reg_HomeProc_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((!(_s10_Sta_reg_Dir_Pending) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((!(_s1_Sta_reg_Dir_Dirty) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s16_Sta_reg_HomeProc_CacheState == 2'd2) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s16_Sta_reg_HomeProc_CacheState == 2'd2) && (_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s16_Sta_reg_HomeProc_CacheState == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s16_Sta_reg_HomeProc_CacheState == 2'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s18_Sta_reg_HomeProc_ProcCmd == 2'd1) && !(_s10_Sta_reg_Dir_Pending) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && _s9_Sta_reg_Dir_Local && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_s16_Sta_reg_HomeProc_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && (_s16_Sta_reg_HomeProc_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && (_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && (_s29_Sta_reg_Proc_0_CacheState == _s16_Sta_reg_HomeProc_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && (_s29_Sta_reg_Proc_0_CacheState == _s33_Sta_reg_Proc_1_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s29_Sta_reg_Proc_0_CacheState == 2'd2) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s33_Sta_reg_Proc_1_CacheState == 2'd2) && (_s29_Sta_reg_Proc_0_CacheState == _s33_Sta_reg_Proc_1_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s33_Sta_reg_Proc_1_CacheState == 2'd2) && (_s33_Sta_reg_Proc_1_CacheState == _s16_Sta_reg_HomeProc_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s33_Sta_reg_Proc_1_CacheState == 2'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && (_s42_Sta_reg_UniMsg_0_Cmd == _s20_Sta_reg_HomeUniMsg_Cmd) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && (_s42_Sta_reg_UniMsg_0_Cmd == _s46_Sta_reg_UniMsg_1_Cmd) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && (_s42_Sta_reg_UniMsg_0_Cmd == _s46_Sta_reg_UniMsg_1_Cmd) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!(((_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && (_s46_Sta_reg_UniMsg_1_Cmd == _s20_Sta_reg_HomeUniMsg_Cmd) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s3_Sta_reg_Dir_HeadVld && (_s16_Sta_reg_HomeProc_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s48_Sta_reg_UniMsg_1_HomeProc && !(_s10_Sta_reg_Dir_Pending) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s48_Sta_reg_UniMsg_1_HomeProc && !(_s10_Sta_reg_Dir_Pending) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && (_s29_Sta_reg_Proc_0_CacheState == _s16_Sta_reg_HomeProc_CacheState) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s48_Sta_reg_UniMsg_1_HomeProc && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd2) && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s48_Sta_reg_UniMsg_1_HomeProc && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd2) && _s9_Sta_reg_Dir_Local && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s4_Sta_reg_Dir_HomeHeadPtr && (_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s4_Sta_reg_Dir_HomeHeadPtr && (_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && !(_s1_Sta_reg_Dir_Dirty) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s16_Sta_reg_HomeProc_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s20_Sta_reg_HomeUniMsg_Cmd == 3'd3) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s20_Sta_reg_HomeUniMsg_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s29_Sta_reg_Proc_0_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s38_Sta_reg_ShWbMsg_Cmd == 2'd1) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s50_Sta_reg_WbMsg_Cmd && _s9_Sta_reg_Dir_Local && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s9_Sta_reg_Dir_Local && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s9_Sta_reg_Dir_Local && (_s33_Sta_reg_Proc_1_CacheState == 2'd2) && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd2) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s9_Sta_reg_Dir_Local && (_s42_Sta_reg_UniMsg_0_Cmd == 3'd2) && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		!((_s9_Sta_reg_Dir_Local && (_s46_Sta_reg_UniMsg_1_Cmd == 3'd4) && !((!(_s55_$formal$flash.sv:66260$11056_EN) && _s56_id123))))	&&
+		property
+	[1]: 
+Assumptions:
+	[1]: (sz: 2)
+		(_i2_reset || b$126)	&&
+		(_i2_reset$next || b$126$next)
+
+Axioms (refinements): #1
+	[1]: (sz: 2)
+		!(_s56_id123$next)	&&
+		((_i2_reset || b$126) && (_i2_reset$next || b$126$next))
+
+(max frame explored)    F[12]
+(frame converged)       F[7]

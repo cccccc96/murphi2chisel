@@ -1,0 +1,105 @@
+Timeout: 3563, Memory_limit: 14335
+	10000.000000 (abstract query)
+	10000.000000 (concrete query)
+
+Config:
+	(concrete bit-width limit: 0)
+	(fineness: 2)
+	(interpret-ex-cc-level: 2)
+	(forward-check:	0)
+	(full projection)
+	(prioritization:	single)
+
+#STAT# num_bits= 42 num_regs= 22 num_total_bits= 103
+1  42
+2  5
+3  17
+
+System
+  int : 1843
+  bool : 3052
+  sum : 4895
+  bool_op : 2352
+  int_op : 23
+    !  40
+    !=_int  4
+    &&  51
+    ==  45
+    ==_int  132
+    ?:  1190
+    ?:_int  862
+    |_2  5
+    |_3  17
+    |_7  1
+    ||  28
+
+
+Property
+  int : 0
+  bool : 54
+  sum : 54
+  bool_op : 23
+  int_op : 0
+    !  14
+    &&  8
+    ==  1
+
+Partial interpretation info:
+  depth: 0
+  count: 0
+  count (d=0): 0
+
+  depth (prop): 0
+  count (prop): 0
+  count (d=0) (prop): 0
+
+	# of Inst.                  : 5029	(864 bytes each)
+	  ExInst::hm_ExInst.size()  : 0	(984 bytes each)
+	  SigInst::hm_SigInst.size(): 148	(904 bytes each)
+	  NumInst::hm_NumInst.size(): 76	(888 bytes each)
+	  OpInst::hm_OpInst.size()  : 343	(944 bytes each)
+	  OpInst::hm_ITEInst.size() : 2052	(944 bytes each)
+	  OpInst::hm_ETCInst.size() : 16	(944 bytes each)
+	Total                       : 2635
+
+	Memory (est.)               : 4.143768 MB
+	  ExInst                    : 0.000000 MB
+	  SigInst                   : 0.127594 MB
+	  NumInst                   : 0.064362 MB
+	  OpInst::OP                : 0.308792 MB
+	  OpInst::ITE               : 1.847351 MB
+	  OpInst::ETC               : 0.014404 MB
+
+	(maximum function composition in T: 1)
+[BMC_1]    (starting kind upto max bound 1000)
+[BMC_1]    (init: step 0 is UNSAT)
+  0s	(kind: safe till step 0)
+[BMC_1]    (init: step 1 is UNSAT)
+[BMC_1]    (conc: step 1 is SAT)
+[BMC_1]    (init: step 2 is UNSAT)
+[BMC_1]    (conc: step 2 is SAT)
+[BMC_1]    (init: step 3 is UNSAT)
+[BMC_1]    (conc: step 3 is SAT)
+[BMC_1]    (init: step 4 is UNSAT)
+[BMC_1]    (conc: step 4 is SAT)
+[BMC_1]    (init: step 5 is UNSAT)
+[BMC_1]    (conc: step 5 is SAT)
+  0s	(kind: safe till step 5)
+[BMC_1]    (init: step 6 is UNSAT)
+[BMC_1]    (conc: step 6 is SAT)
+[BMC_1]    (init: step 7 is UNSAT)
+[BMC_1]    (conc: step 7 is SAT)
+[BMC_1]    (init: step 8 is UNSAT)
+[BMC_1]    (conc: step 8 is SAT)
+[BMC_1]    (init: step 9 is UNSAT)
+[BMC_1]    (conc: step 9 is SAT)
+[BMC_1]    (init: step 10 is UNSAT)
+[BMC_1]    (conc: step 10 is SAT)
+  2s	(kind: safe till step 10)
+[BMC_1]    (init: step 11 is UNSAT)
+[BMC_1]    (conc: step 11 is SAT)
+
+	(fallback to non-inc solver, bv, depth: 2, t:894215 usec)
+[MUS_0]    	(non-inc result: --keep-ite unsat, t: 1426866 usec)
+[BMC_1]    (init: step 12 is UNSAT)
+[BMC_1]    (conc: step 12 is SAT)

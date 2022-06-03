@@ -1,0 +1,48 @@
+(benchmark) w0
+
+(#2)		!((((_s2_Cache_reg_0_State == 2'd0) || (_s2_Cache_reg_0_State != 2'd0)) && (_s2_Cache_reg_0_State == 2'd0) && ((_i1_io_en_a == 7'd46) || (_i1_io_en_a != 7'd46)) && b$17259 && ReductionOr_1_2(_s2_Cache_reg_0_State$next) && (_s2_Cache_reg_0_State$next == _s2_Cache_reg_0_State$next_rhs)))
+	(id)	7662
+	(#UF )	2
+	(#UFt)	2
+	      	ReductionOr_1_2	#1
+	      	ReductionOr_1_3	#1
+	(#K  )	26
+	(#reg)	4
+	(#inp)	2
+	(#ite)	27
+	(#CF )	60
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#3)		!(((_s4_Cache_reg_1_State == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State)))
+	(id)	7794
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+
+(#4)		!(((_s4_Cache_reg_1_State$next == 2'd0) && ReductionOr_1_2(_s4_Cache_reg_1_State$next)))
+	(id)	7796
+	(#UF )	1
+	(#UFt)	1
+	      	ReductionOr_1_2	#1
+	(#K  )	1
+	(#reg)	1
+	(#inp)	0
+	(#ite)	0
+	(#CF )	3
+	(#Cc )	0
+	(#Cct)	0
+	(#Ex )	0
+	(#Ext)	0
+

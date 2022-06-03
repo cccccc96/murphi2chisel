@@ -1,0 +1,6 @@
+	(property: all (1 assertions))
+	(problem size: 73 bits)
+	(abstraction: sa)
+  0s	(bmc: safe till step 0)
+  0s	(bmc: safe till step 5)
+  30s	(bmc: safe till step 10)

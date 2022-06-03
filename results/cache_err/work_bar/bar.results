@@ -1,0 +1,6 @@
+i-benchmark:	bar
+frontend:	yosys
+backend:	+y2
+y2-force-reset-limit:	1000
+y2-force-reset-timeout-sec:	50
+y2-ab-soft-reset-timeout-sec:	3
